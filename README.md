@@ -1,2 +1,2 @@
-# ArchConfig
-My Arch Linux Configuration
+# Linux
+My Config Files for Linux 
