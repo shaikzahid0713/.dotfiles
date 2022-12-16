@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+.content {
+    background-color: #FFECEF;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 10px solid;
+    position: absolute;
+    margin: 0 auto;
+}

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+}
+
+.top-container {
+    background-color: aliceblue;
+}
+
+.middle-container {
+    background-color: orange;
+}
+
+.bottom-container {
+    background-color: greenyellow;
+}

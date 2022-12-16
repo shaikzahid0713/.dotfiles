@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.top-container {
+    height: 200px;
+    width: 200px;
+    color: aqua;
+}

@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: #FFECEF;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 10px solid;
+    align-self: flex-start;
+}
+
+.middle-container {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-self: center;
+}
+
+.last-container {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    align-self: flex-end;
+}

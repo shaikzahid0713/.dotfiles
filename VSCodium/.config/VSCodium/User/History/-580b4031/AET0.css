@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.content {
+    background-color: #FFECEF;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 10px solid;
+}
+
+.middle-container {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: 20px solid;
+    padding: 20px;
+    margin-left: 260px;
+}
+
+.last-container {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    align-self: flex-end;
+    border: 10px solid;
+    padding: 25px;
+    margin-left: 540px;
+}

@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+.content {
+    background-color: #FFECEF;
+    padding: 20px;
+}

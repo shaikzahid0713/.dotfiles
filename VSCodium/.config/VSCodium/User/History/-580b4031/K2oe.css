@@ -1,0 +1,18 @@
+.content {
+    background-color: #FFECEF;
+}
+
+.middle-container {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.last-container {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}

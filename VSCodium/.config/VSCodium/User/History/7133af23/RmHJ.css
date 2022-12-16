@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+}
+
+main {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box {
+    padding: 35px;
+    margin: 10px;
+    color: white;
+    background-color: orangered;
+    font-size: 30px;
+}

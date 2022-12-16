@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+
+main {
+    background-color: blue;
+}
+
+.box {
+    padding: 35px;
+    margin: 10px;
+    color: white;
+    background-color: orangered;
+    font-size: 30px;
+}
