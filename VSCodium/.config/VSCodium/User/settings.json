@@ -50,10 +50,16 @@
         "command": "livePreview.start.preview.atFile"
         },
         {
-        "key": "a",
+        "key": "k",
         "name": "Close active editor",
         "type": "command",
         "command": "workbench.action.closeActiveEditor"
+        },
+        {
+        "key": "q",
+        "name": "Kill Terminal",
+        "type": "command",
+        "command": "workbench.action.terminal.kill"
         },
         {
         "key": "b",
@@ -67,7 +73,7 @@
             "command": "workbench.action.showAllEditors"
             },
             
-            
+          
             {
             "key": "h",
             "name": "Move editor into left group",
@@ -336,6 +342,7 @@
         "type": "command",
         "command": "workbench.action.splitEditorDown"
         },
+
         {
         "key": "i",
         "name": "Insert...",
@@ -477,8 +484,8 @@
             "name": "Toggle Terminal",
             "type": "command",
             "command": "workbench.action.togglePanel"
-            }
-        ]
+            },
+                    ]
         },
         {
         "key": "T",
@@ -731,7 +738,6 @@
         "terminal.ansiBrightYellow": "#d19a66",
         },
     },
-    "editor.minimap.enabled": false,
     "vscode-neovim.logLevel": "none",
     "code-runner.clearPreviousOutput": true,
     "code-runner.saveAllFilesBeforeRun": true,
@@ -900,4 +906,7 @@
     "editor.cursorSmoothCaretAnimation": true,
     "editor.linkedEditing": true,
     "workbench.startupEditor": "none",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": false,
+    "explorer.confirmDragAndDrop": false,
 }

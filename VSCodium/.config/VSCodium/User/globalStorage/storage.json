@@ -1,29 +1,22 @@
 {
     "telemetry.machineId": "b1b3071e801b57296dac78e7232375f6eec4c2ad6cef1d7feb5d4e64488e65ea",
     "backupWorkspaces": {
-        "workspaces": [],
-        "folders": [
+        "workspaces": [
             {
-                "folderUri": "file:///home/shaik/Programming/DSA"
+                "id": "e6cb794c30bf45c6ab74de3526389830",
+                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
+            },
+            {
+                "id": "6f23a2e12fec80cd5bfbc1404cf37ba2",
+                "configURIPath": "file:///home/shaik/Documents/Code/Java-Jupyter.code-workspace"
             }
         ],
-        "emptyWindows": [
+        "folders": [
             {
-                "backupFolder": "1671191256227"
-            },
-            {
-                "backupFolder": "1671191427308"
-            },
-            {
-                "backupFolder": "1671205853932"
-            },
-            {
-                "backupFolder": "1671205923260"
-            },
-            {
-                "backupFolder": "1671205962170"
+                "folderUri": "file:///home/shaik/Desktop/Projects/Notebooks/Java"
             }
-        ]
+        ],
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -63,11 +56,43 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/Code/Java-Jupyter.code-workspace",
+                                        "path": "/home/shaik/Documents/Code/Java-Jupyter.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Code/Java-Jupyter (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Desktop/Projects/Notebooks/Java",
+                                        "path": "/home/shaik/Desktop/Projects/Notebooks/Java",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Desktop/Projects/Notebooks/Java"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/Code/DSA.code-workspace",
+                                        "path": "/home/shaik/Documents/Code/DSA.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Code/DSA (Workspace)"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -84,12 +109,12 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/github/Computer-Programming/Data-Structures-And-Algorithms",
-                                        "path": "/home/shaik/Desktop/github/Computer-Programming/Data-Structures-And-Algorithms",
+                                        "external": "file:///home/shaik/ArchConfig",
+                                        "path": "/home/shaik/ArchConfig",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Desktop/github/Computer-Programming/Data-Structures-And-Algorithms"
+                                    "label": "~/ArchConfig"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -145,28 +170,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Desktop/Projects/Notebooks"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/Projects/Web",
-                                        "path": "/home/shaik/Desktop/Projects/Web",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/Projects/Web"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/Temp",
-                                        "path": "/home/shaik/Desktop/Temp",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/Temp"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -318,13 +321,11 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "&&Save",
-                        "enabled": false
+                        "label": "&&Save"
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "Save &&As...",
-                        "enabled": false
+                        "label": "Save &&As..."
                     },
                     {
                         "id": "saveAll",
@@ -339,6 +340,13 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)...",
@@ -422,13 +430,15 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&vert File",
-                        "enabled": false
+                        "label": "Re&&vert File"
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "&&Close Editor",
-                        "enabled": false
+                        "label": "&&Close Editor"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "Close &&Workspace"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -473,13 +483,11 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Find",
-                        "enabled": false
+                        "label": "&&Find"
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Replace",
-                        "enabled": false
+                        "label": "&&Replace"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -639,8 +647,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleActivityBarVisibility",
-                                    "label": "&&Activity Bar",
-                                    "checked": true
+                                    "label": "&&Activity Bar"
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
@@ -860,7 +867,7 @@
                     {
                         "id": "editor.action.toggleWordWrap",
                         "label": "&&Word Wrap",
-                        "enabled": false
+                        "checked": true
                     },
                     {
                         "id": "editor.action.toggleStickyScroll",
@@ -872,8 +879,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -882,8 +888,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -952,54 +957,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1385,6 +1381,11 @@
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
             },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
+            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1769,7 +1770,7 @@
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
-            "activityBarWidth": 48,
+            "activityBarWidth": 0,
             "sideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
@@ -1777,7 +1778,11 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/shaik/.config/VSCodium/Backups/1671205962170",
+            "workspaceIdentifier": {
+                "id": "e6cb794c30bf45c6ab74de3526389830",
+                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
+            },
+            "backupPath": "/home/shaik/.config/VSCodium/Backups/e6cb794c30bf45c6ab74de3526389830",
             "uiState": {
                 "mode": 1,
                 "x": 0,
@@ -1786,28 +1791,6 @@
                 "height": 1056
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///home/shaik/Programming/DSA",
-                "backupPath": "/home/shaik/.config/VSCodium/Backups/080d804c2080bcc68b07f477686f8843",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 24,
-                    "width": 1920,
-                    "height": 1056
-                }
-            },
-            {
-                "backupPath": "/home/shaik/.config/VSCodium/Backups/1671205962170",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 24,
-                    "width": 1920,
-                    "height": 1056
-                }
-            }
-        ]
+        "openedWindows": []
     }
 }

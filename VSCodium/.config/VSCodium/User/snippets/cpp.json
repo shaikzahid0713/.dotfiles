@@ -8,14 +8,44 @@
 					"using namespace std;\n",
 					"$3\n",
 					"int main() {\n",
-						"\tfreopen(\"input.txt\", \"r\", stdin);",
-						"\tfreopen(\"output.txt\", \"w\", stdout);\n",
+						"\tfreopen(\"../../input.txt\", \"r\", stdin);",
+						"\tfreopen(\"../../output.txt\", \"w\", stdout);",
+						"\tfreopen(\"../../error.txt\", \"w\", stderr);\n",
 					"\t$2",
 					"}"
 
 		],
-	}
+	},
 	
+	
+	"Graph" : {
+		"prefix": "Graph",
+		"body": [
+				"int vertices, edges;",
+				"vector<vector<int>> graph($1);",
+				"vector<int> visited($1);$2", 
+				"vector<int> bfs;$3", 
+				"vector<int> dfs;$4",
+				"$5",
+		]
+	},
 
+	"Error" : {
+		"prefix": "error",
+		"body": [
+				"#define bts(jimin) cerr << #jimin << \" -> \"; loveYourself(jimin); cerr << endl;",
+				"void loveYourself(int jimin)    { cerr << jimin; }",
+				"template <class T> void loveYourself(vector <T> v) { ",
+    			"\tcerr << \" [ \";",
+    			"\tfor (T suga : v) {",
+				"\t\tloveYourself(suga);",
+        		"\t\tcerr << \" \";",
+				"\t}", 
+    			"\tcerr << \"]\";", 
+				"}"
+				
+				
+		]
+	}
 	
 }
