@@ -11,8 +11,8 @@
 
 " Find more examples here: https://jb.gg/share-ideavimrc
 
-inoremap jj <Esc>
-inoremap kk <Esc>
+inoremap jk <Esc>
+inoremap kj <Esc>
 
 
 set number relativenumber
@@ -49,19 +49,23 @@ vmap <leader>d <C-d>
 vmap <leader>u <C-u>
 
 " actions
-nmap <Tab>      <action>(NextTab)
-nmap <S-Tab>     <action>(PreviousTab)
-nmap <leader>i      <action>(Generate)
-nmap <leader>m      <action>(Git.Menu)
-nmap <leader>s      <action>(QuickChangeScheme)
-nmap <leader>l      <action>(ShowErrorDescription)
-nmap <leader>e      <action>(GotoNextError)
-nmap <leader>a      <action>(CloseEditor)
-nmap <leader>o      <action>(OptimizeImports)
+nmap <Tab>          <action>(NextTab)
+nmap <S-Tab>        <action>(PreviousTab)
+nmap <leader>a      <action>(Run)
+nmap <leader>b      <action>(CloseEditor)
 nmap <leader>c      <action>(CloseAllEditorsButActive)
+nmap <leader>e      <action>(ActivateProjectToolWindow)
+nmap <leader>g      <action>(GotoNextError)
+nmap <leader>h      <action>(HideActiveWindow)
+nmap <leader>i      <action>(Generate)
+nmap <leader>l      <action>(ShowErrorDescription)
+nmap <leader>m      <action>(Git.Menu)
 nmap <leader>n      <action>(NewClass)
-nmap <leader>g      <action>(GotoFile)
-nmap <leader>r      <Action>(ReformatCode)
+nmap <leader>o      <action>(OptimizeImports)
+nmap <leader>o      <action>(OptimizeImports)
+nmap <leader>q      <action>(Stop)
+nmap <leader>r      <action>(ReformatCode)
+nmap <leader>s      <action>(QuickChangeScheme)
 
 set NERDTree
 map <c-p> :NERDTree<CR>
@@ -77,7 +81,8 @@ inoremap <C-j> <esc>:m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
 nnoremap <leader>j :m .+1<CR>==
 
+
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 map f <Plug>(easymotion-bd-f)
-map / <Plug>(easymotion-s)
+map ; <Plug>(easymotion-s)

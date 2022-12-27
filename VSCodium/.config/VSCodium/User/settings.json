@@ -62,6 +62,12 @@
         "command": "workbench.action.terminal.kill"
         },
         {
+        "key": "t",
+        "name": "Toggle Terminal",
+        "type": "command",
+        "command": "workbench.action.togglePanel"
+        },
+        {
         "key": "b",
         "name": "Buffers/Editors...",
         "type": "bindings",
@@ -474,19 +480,13 @@
             }
         ]
         },
-        {
-        "key": "t",
-        "name": "Terminal...",
-        "type": "bindings",
-        "bindings": [
-            {
-            "key": "t",
-            "name": "Toggle Terminal",
-            "type": "command",
-            "command": "workbench.action.togglePanel"
-            },
-                    ]
-        },
+        // {
+        // "key": "t",
+        // "name": "Terminal...",
+        // "type": "bindings",
+        // "bindings": [
+        // ] 
+        // },
         {
         "key": "T",
         "name": "UI toggles...",
@@ -907,6 +907,6 @@
     "editor.linkedEditing": true,
     "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
-    "workbench.activityBar.visible": false,
     "explorer.confirmDragAndDrop": false,
+    "workbench.activityBar.visible": false,
 }

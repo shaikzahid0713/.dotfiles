@@ -5,18 +5,21 @@
             {
                 "id": "e6cb794c30bf45c6ab74de3526389830",
                 "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
-            },
-            {
-                "id": "6f23a2e12fec80cd5bfbc1404cf37ba2",
-                "configURIPath": "file:///home/shaik/Documents/Code/Java-Jupyter.code-workspace"
             }
         ],
         "folders": [
             {
-                "folderUri": "file:///home/shaik/Desktop/Projects/Notebooks/Java"
+                "folderUri": "file:///home/shaik/Documents/CarFullStack-FrontEnd"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1672071988914"
+            },
+            {
+                "backupFolder": "1672077580016"
+            }
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -65,6 +68,28 @@
                                     "id": "openRecentWorkspace",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/Code/DSA.code-workspace",
+                                        "path": "/home/shaik/Documents/Code/DSA.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Code/DSA (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/CarFullStack-FrontEnd",
+                                        "path": "/home/shaik/Documents/CarFullStack-FrontEnd",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/CarFullStack-FrontEnd"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/shaik/Documents/Code/Java-Jupyter.code-workspace",
                                         "path": "/home/shaik/Documents/Code/Java-Jupyter.code-workspace",
                                         "scheme": "file"
@@ -82,17 +107,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Desktop/Projects/Notebooks/Java"
-                                },
-                                {
-                                    "id": "openRecentWorkspace",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/Code/DSA.code-workspace",
-                                        "path": "/home/shaik/Documents/Code/DSA.code-workspace",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Code/DSA (Workspace)"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -159,17 +173,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Desktop/Projects/WorkSpaces/Web (Workspace)"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/Projects/Notebooks",
-                                        "path": "/home/shaik/Desktop/Projects/Notebooks",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/Projects/Notebooks"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
