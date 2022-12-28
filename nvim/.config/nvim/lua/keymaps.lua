@@ -48,7 +48,7 @@ else
     keymap("n", "dda", "ggdG", opts)
 
     --Delete 
-    keymap("i", "<C-backspace>", "<Esc>dbx", opts)
+    keymap("i", "<C-backspace>", "<Esc>dbxi", opts)
 
     -- navigate buffers
     keymap("n", "<tab>", ":bnext<cr>", opts)

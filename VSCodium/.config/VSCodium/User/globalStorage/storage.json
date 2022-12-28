@@ -7,19 +7,8 @@
                 "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
             }
         ],
-        "folders": [
-            {
-                "folderUri": "file:///home/shaik/Documents/CarFullStack-FrontEnd"
-            }
-        ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1672071988914"
-            },
-            {
-                "backupFolder": "1672077580016"
-            }
-        ]
+        "folders": [],
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -637,7 +626,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -1774,7 +1764,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 0,
-            "sideBarWidth": 0,
+            "sideBarWidth": 234,
             "statusBarHeight": 22,
             "windowBorder": false
         }

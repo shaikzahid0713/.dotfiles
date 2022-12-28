@@ -33,6 +33,15 @@ command! -complete=file -nargs=? New call <SID>split('h', '__vscode_new__')
 command! -complete=file -nargs=? Vnew call <SID>split('v', '__vscode_new__')
 command! -bang Only if <q-bang> == '!' | call <SID>closeOtherEditors() | else | call VSCodeNotify('workbench.action.joinAllGroups') | endif
 
+" My Settings
+
+nnoremap m $
+nnoremap z 0
+nnoremap ; %
+
+nnoremap dda ggdG
+nnoremap yya ggyG
+
 nnoremap <silent> <C-w>s :call <SID>split('h')<CR>
 xnoremap <silent> <C-w>s :call <SID>split('h')<CR>
 

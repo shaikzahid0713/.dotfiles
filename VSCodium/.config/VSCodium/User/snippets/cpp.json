@@ -6,12 +6,12 @@
 					"#include <vector>",			
 					"$1\n",
 					"using namespace std;\n",
-					"$3\n",
+					"$2\n",
 					"int main() {\n",
-						"\tfreopen(\"../../input.txt\", \"r\", stdin);",
+						"\tfreopen(\"../../input.txt\",  \"r\", stdin);",
 						"\tfreopen(\"../../output.txt\", \"w\", stdout);",
-						"\tfreopen(\"../../error.txt\", \"w\", stderr);\n",
-					"\t$2",
+						"\tfreopen(\"../../error.txt\",  \"w\", stderr);\n",
+					"\t$3",
 					"}"
 
 		],
