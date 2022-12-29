@@ -5,23 +5,23 @@
       "when": "editorTextFocus"
     },
     {
-      "key": "ctrl+i",
+      "key": "alt+l",
       "command": "cursorRight",
       "when": "textInputFocus"
     },
     {
       "key": "alt+i",
-      "command": "cursorWordRightSelect",
+      "command": "cursorWordDownSelect",
       "when": "textInputFocus"
     },
     {
-      "key": "ctrl+u",
+      "key": "alt+h",
       "command": "cursorLeft",
       "when": "textInputFocus"
     },
     {
       "key": "alt+u",
-      "command": "cursorWordLeftSelect",
+      "command": "cursorWordUpSelect",
       "when": "textInputFocus"
     },
     {
@@ -143,7 +143,7 @@
       "when": "terminalFocus"
     },
     {
-      "key": "ctrl+shift+t",
+      "key": "alt+t",
       "command": "workbench.action.terminal.focus",
       "when": "!terminalFocus"
     },
@@ -199,6 +199,11 @@
       "when": "editorTextFocus && neovim.init"
     },
     {
+      "key": "alt+;",
+      "command": "vscode-neovim.escape",
+      "when": "editorTextFocus && neovim.init"
+    },
+    {
       "key": "ctrl+[",
       "command": "-vscode-neovim.escape",
       "when": "editorTextFocus && neovim.init"
@@ -231,6 +236,46 @@
     {
       "key": "alt+q",
       "command": "workbench.action.terminal.kill"
+    },
+    {
+      "key": "alt+j",
+      "command": "cursorDown",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "down",
+      "command": "-cursorDown",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "alt+k",
+      "command": "cursorUp",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "up",
+      "command": "-cursorUp",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "alt+i",
+      "command": "cursorDownSelect",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "shift+down",
+      "command": "-cursorDownSelect",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "alt+u",
+      "command": "cursorUpSelect",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "shift+up",
+      "command": "-cursorUpSelect",
+      "when": "textInputFocus"
     },
  ]
  
