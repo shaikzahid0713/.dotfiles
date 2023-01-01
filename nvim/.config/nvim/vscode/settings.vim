@@ -35,7 +35,7 @@ command! -bang Only if <q-bang> == '!' | call <SID>closeOtherEditors() | else | 
 
 " My Settings
 
-nnoremap m $
+nnoremap n $
 nnoremap z 0
 nnoremap ; %
 

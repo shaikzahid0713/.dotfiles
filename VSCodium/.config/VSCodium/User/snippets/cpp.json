@@ -12,7 +12,10 @@
 						"\tfreopen(\"../../output.txt\", \"w\", stdout);",
 						"\tfreopen(\"../../error.txt\",  \"w\", stderr);\n",
 					"\t$3",
-					"}"
+					"}",
+					
+					"/*\n",
+					"*/"
 
 		],
 	},

@@ -1,10 +1,5 @@
 [
     {
-      "key": "ctrl+/",
-      "command": "editor.action.commentLine",
-      "when": "editorTextFocus"
-    },
-    {
       "key": "alt+l",
       "command": "cursorRight",
       "when": "textInputFocus"
@@ -76,11 +71,6 @@
       "key": "tab",
       "command": "workbench.action.quickOpenNavigateNext",
       "when": "inQuickOpen"
-    },
-    {
-      "key": "shit+tab",
-      "command": "selectPrevSuggestion",
-      "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
     {
       "key": "shift+tab",
@@ -276,6 +266,16 @@
       "key": "shift+up",
       "command": "-cursorUpSelect",
       "when": "textInputFocus"
+    },
+    {
+      "key": "right",
+      "command": "-cursorRight",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "ctrl+/",
+      "command": "-vscode-neovim.send",
+      "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
     },
  ]
  

@@ -170,6 +170,17 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/shaik/hosts",
+                                        "path": "/home/shaik/hosts",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/hosts"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/shaik/Desktop/arch-apps.sh",
                                         "path": "/home/shaik/Desktop/arch-apps.sh",
                                         "scheme": "file"
@@ -264,17 +275,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Desktop/VsCode/.ssh/config"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/dotfiles/.xprofile",
-                                        "path": "/home/shaik/Desktop/dotfiles/.xprofile",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/dotfiles/.xprofile"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -643,7 +643,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Panel"
+                                    "label": "&&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1188,8 +1189,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
