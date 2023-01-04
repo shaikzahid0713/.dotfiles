@@ -275,7 +275,27 @@
     {
       "key": "ctrl+/",
       "command": "-vscode-neovim.send",
-      "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+      "when": "editortextfocus && neovim.ctrlkeysnormal && neovim.init && neovim.mode != 'insert'"
+    },
+    {
+      "key": "ctrl+/",
+      "command": "editor.action.blockComment",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+shift+a",
+      "command": "-editor.action.blockComment",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+shift+/",
+      "command": "editor.action.commentLine",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+/",
+      "command": "-editor.action.commentLine",
+      "when": "editorTextFocus && !editorReadonly"
     },
  ]
  

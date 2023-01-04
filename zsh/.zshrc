@@ -181,7 +181,7 @@ alias e="exit"
 alias c="clear"
 alias b="brillo"
 alias v="codium" 
-alias u="ranger" 
+alias f="ranger" 
 alias z="source ~/.zshrc"
 alias su="sudo su"
 alias bu="sudo brillo -A"
@@ -199,3 +199,7 @@ alias linux="nvim ~/linux.sh"
 alias session="nvim -S ~/Programming-Grind/session.vim"
 
 # if [ -e /home/shaik/.nix-profile/etc/profile.d/nix.sh ]; then . /home/shaik/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+
+# Youtube Downloading
+alias yt-dl="yt-dlp -f \"bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b\" -o '%(playlist_index|)s%(playlist_index& - |)s%(title)s.%(ext)s' BaW_jenozKc"

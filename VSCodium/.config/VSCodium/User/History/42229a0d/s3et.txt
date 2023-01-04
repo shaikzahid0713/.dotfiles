@@ -1,0 +1,11 @@
+DEQUE: 
+9 3 11 2 1 6 8 4 7 5 
+
+Priority Queue: 
+11 9 8 7 6 5 4 3 2 1 
+
+Unordered Set: 
+9 11 1 8 7 5 4 6 2 3 
+
+Ordered Set: 
+1 2 3 4 5 6 7 8 9 11 

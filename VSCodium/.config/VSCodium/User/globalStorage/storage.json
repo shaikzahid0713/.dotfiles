@@ -5,10 +5,24 @@
             {
                 "id": "e6cb794c30bf45c6ab74de3526389830",
                 "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
+            },
+            {
+                "id": "6f23a2e12fec80cd5bfbc1404cf37ba2",
+                "configURIPath": "file:///home/shaik/Documents/Code/Java-Jupyter.code-workspace"
             }
         ],
         "folders": [],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1672727947600"
+            },
+            {
+                "backupFolder": "1672741810175"
+            },
+            {
+                "backupFolder": "1672742522987"
+            }
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -48,7 +62,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -65,17 +80,6 @@
                                     "label": "~/Documents/Code/DSA (Workspace)"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/CarFullStack-FrontEnd",
-                                        "path": "/home/shaik/Documents/CarFullStack-FrontEnd",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/CarFullStack-FrontEnd"
-                                },
-                                {
                                     "id": "openRecentWorkspace",
                                     "uri": {
                                         "$mid": 1,
@@ -85,6 +89,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Code/Java-Jupyter (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/CarFullStack-FrontEnd",
+                                        "path": "/home/shaik/Documents/CarFullStack-FrontEnd",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/CarFullStack-FrontEnd"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -643,8 +658,7 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Panel",
-                                    "checked": true
+                                    "label": "&&Panel"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1189,7 +1203,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1423,12 +1438,12 @@
                 "userSettingsLabel": "ctrl+shift+h"
             },
             "editor.action.commentLine": {
-                "label": "Ctrl+/",
-                "userSettingsLabel": "ctrl+/"
+                "label": "Ctrl+Shift+/",
+                "userSettingsLabel": "ctrl+shift+/"
             },
             "editor.action.blockComment": {
-                "label": "Ctrl+Shift+A",
-                "userSettingsLabel": "ctrl+shift+a"
+                "label": "Ctrl+/",
+                "userSettingsLabel": "ctrl+/"
             },
             "editor.emmet.action.expandAbbreviation": {
                 "label": "Tab",
@@ -1783,6 +1798,35 @@
                 "height": 1056
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "workspaceIdentifier": {
+                    "id": "6f23a2e12fec80cd5bfbc1404cf37ba2",
+                    "configURIPath": "file:///home/shaik/Documents/Code/Java-Jupyter.code-workspace"
+                },
+                "backupPath": "/home/shaik/.config/VSCodium/Backups/6f23a2e12fec80cd5bfbc1404cf37ba2",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 24,
+                    "width": 1920,
+                    "height": 1056
+                }
+            },
+            {
+                "workspaceIdentifier": {
+                    "id": "e6cb794c30bf45c6ab74de3526389830",
+                    "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
+                },
+                "backupPath": "/home/shaik/.config/VSCodium/Backups/e6cb794c30bf45c6ab74de3526389830",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 24,
+                    "width": 1920,
+                    "height": 1056
+                }
+            }
+        ]
     }
 }

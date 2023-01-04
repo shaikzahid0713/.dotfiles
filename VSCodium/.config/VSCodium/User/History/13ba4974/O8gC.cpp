@@ -1,0 +1,91 @@
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <set>
+#include <deque>
+#include <queue>
+
+using namespace std;
+
+void run_tests() {
+    int n;
+    cin >> n;
+    deque<int> temp;
+    priority_queue<int> pq;
+    unordered_set<int> us;
+    set<int> os;
+    multiset<int> ms;
+    unordered_map<int, int> um;
+
+    
+    while (n-- > 0) {
+        int x; cin >> x;
+        temp.emplace_front(x);
+        pq.emplace(x);
+        us.emplace(x);
+        os.emplace(x);
+
+    }
+    
+    cout << "DEQUE: \n";
+    while(!temp.empty()) {
+        cout << temp.front() << " ";
+        temp.pop_front();
+        cout << temp.back() << " ";
+        temp.pop_back();
+    }
+    
+    cout << "\n";
+    cout << "\nPriority Queue: \n";
+    while (!pq.empty()) {
+        cout << pq.top() << " ";
+        pq.pop();
+    }
+  
+    cout << "\n";
+    cout << "\nUnordered Set: \n";
+    for (auto x : us)
+        cout << x << " ";
+    cout << "\n";
+
+
+    cout << "\nOrdered Set: \n";
+    cout << "Upper Bound: " << *os.upper_bound(9) << "\n";
+    cout << "Lower Bound: " << *os.lower_bound(1) << "\n";
+    for (auto x : os)
+        cout << x << " ";
+    cout << "\n";
+
+    cout << "\nMulti Set: \n";
+    cout << "Upper Bound: " << *ms.upper_bound(9) << "\n";
+    cout << "Lower Bound: " << *ms.lower_bound(1) << "\n";
+    for (auto x : ms)
+        cout << x << " ";
+    cout << "\n";
+
+}
+
+int32_t main() {
+
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr); cout.tie(nullptr);
+
+    #ifndef ONLINE_JUDGE
+        freopen("../../input.txt",  "r", stdin);
+        freopen("../../output.txt", "w", stdout);
+        freopen("../../error.txt",  "w", stderr);
+    #endif
+
+    int tests = 1;
+    // cin >> tests;
+
+    while(tests-- > 0) {
+         run_tests();
+    }
+
+}
+
+/*
+
+*/

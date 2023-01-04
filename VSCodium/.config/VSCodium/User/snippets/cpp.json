@@ -12,14 +12,55 @@
 						"\tfreopen(\"../../output.txt\", \"w\", stdout);",
 						"\tfreopen(\"../../error.txt\",  \"w\", stderr);\n",
 					"\t$3",
-					"}",
+					"}\n",
 					
-					"/*\n",
+					"/*\n$4",
+					"*/"
+
+		],
+	},
+
+	"Competitive Programming Snippet" : {
+		"prefix": "cpp",
+		"body": [
+					"#include <iostream>",
+					"#include <vector>",			
+					"$1\n",
+					"using namespace std;",
+					"$2\n",
+					"$5\n",
+					
+					"void run_tests() {",
+					"\t$4",
+					"}\n",
+					
+					"int32_t main() {\n",
+						
+						"\tios::sync_with_stdio(false);",
+						"\tcin.tie(nullptr); cout.tie(nullptr);\n",
+					
+						"\t#ifndef ONLINE_JUDGE",
+						"\t\tfreopen(\"../../input.txt\",  \"r\", stdin);",
+						"\t\tfreopen(\"../../output.txt\", \"w\", stdout);",
+						"\t\tfreopen(\"../../error.txt\",  \"w\", stderr);",
+						"\t#endif\n",
+
+						"\tint tests = 1;",
+						"\tcin >> tests;$3\n",
+
+						"\twhile(tests-- > 0) {",
+						"\t\t run_tests();",
+						"\t}\n",
+						
+					"}\n",
+					
+					"/*\n$10",
 					"*/"
 
 		],
 	},
 	
+
 	
 	"Graph" : {
 		"prefix": "Graph",
