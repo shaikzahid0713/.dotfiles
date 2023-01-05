@@ -62,10 +62,10 @@ nmap <leader>l      <action>(ShowErrorDescription)
 nmap <leader>m      <action>(Git.Menu)
 nmap <leader>n      <action>(NewClass)
 nmap <leader>o      <action>(OptimizeImports)
-nmap <leader>o      <action>(OptimizeImports)
 nmap <leader>q      <action>(Stop)
 nmap <leader>r      <action>(ReformatCode)
 nmap <leader>s      <action>(QuickChangeScheme)
+nmap <leader>t      <action>(ActivateTerminalToolWindow)
 
 set NERDTree
 map <c-p> :NERDTree<CR>

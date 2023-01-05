@@ -5,24 +5,10 @@
             {
                 "id": "e6cb794c30bf45c6ab74de3526389830",
                 "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
-            },
-            {
-                "id": "6f23a2e12fec80cd5bfbc1404cf37ba2",
-                "configURIPath": "file:///home/shaik/Documents/Code/Java-Jupyter.code-workspace"
             }
         ],
         "folders": [],
-        "emptyWindows": [
-            {
-                "backupFolder": "1672727947600"
-            },
-            {
-                "backupFolder": "1672741810175"
-            },
-            {
-                "backupFolder": "1672742522987"
-            }
-        ]
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -886,7 +872,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -895,7 +882,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1798,35 +1786,6 @@
                 "height": 1056
             }
         },
-        "openedWindows": [
-            {
-                "workspaceIdentifier": {
-                    "id": "6f23a2e12fec80cd5bfbc1404cf37ba2",
-                    "configURIPath": "file:///home/shaik/Documents/Code/Java-Jupyter.code-workspace"
-                },
-                "backupPath": "/home/shaik/.config/VSCodium/Backups/6f23a2e12fec80cd5bfbc1404cf37ba2",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 24,
-                    "width": 1920,
-                    "height": 1056
-                }
-            },
-            {
-                "workspaceIdentifier": {
-                    "id": "e6cb794c30bf45c6ab74de3526389830",
-                    "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
-                },
-                "backupPath": "/home/shaik/.config/VSCodium/Backups/e6cb794c30bf45c6ab74de3526389830",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 24,
-                    "width": 1920,
-                    "height": 1056
-                }
-            }
-        ]
+        "openedWindows": []
     }
 }

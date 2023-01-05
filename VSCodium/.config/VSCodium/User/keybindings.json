@@ -233,18 +233,8 @@
       "when": "textInputFocus"
     },
     {
-      "key": "down",
-      "command": "-cursorDown",
-      "when": "textInputFocus"
-    },
-    {
       "key": "alt+k",
       "command": "cursorUp",
-      "when": "textInputFocus"
-    },
-    {
-      "key": "up",
-      "command": "-cursorUp",
       "when": "textInputFocus"
     },
     {
@@ -253,23 +243,8 @@
       "when": "textInputFocus"
     },
     {
-      "key": "shift+down",
-      "command": "-cursorDownSelect",
-      "when": "textInputFocus"
-    },
-    {
       "key": "alt+u",
       "command": "cursorUpSelect",
-      "when": "textInputFocus"
-    },
-    {
-      "key": "shift+up",
-      "command": "-cursorUpSelect",
-      "when": "textInputFocus"
-    },
-    {
-      "key": "right",
-      "command": "-cursorRight",
       "when": "textInputFocus"
     },
     {
