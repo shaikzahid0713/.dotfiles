@@ -3,6 +3,8 @@
 let g:EasyMotion_smartcase = 1
 
 nmap f <Plug>(easymotion-bd-f)
-nmap t <Plug>(easymotion-sn)
+nmap w <Plug>(easymotion-w)
+nmap b <Plug>(easymotion-b)
+nmap e <Plug>(easymotion-e)
 
 

@@ -14,7 +14,6 @@
 inoremap jk <Esc>
 inoremap kj <Esc>
 
-
 set number relativenumber
 set idearefactormode=keep
 set ideajoin
@@ -23,10 +22,8 @@ set easymotion
 set ignorecase
 set smartcase
 set autoindent
-"set textwidth = 79
-set textwrap = 80
 
-set timeoutlen = 150
+set timeoutlen = 50
 set which-key
 let g:WhichKey_ShowVimActions = "true"
 let g:WhichKey_DefaultDelay = 0
@@ -42,18 +39,19 @@ nnoremap <C-j> :m +1<CR>
 nnoremap <C-k> :m -2<CR>
 inoremap <C-j> <Esc>:m +1<CR>gi
 inoremap <C-k> <Esc>:m -2<CR>gi
+
 " scrolling
-nmap <leader>d <C-d>
-nmap <leader>u <C-u>
-vmap <leader>d <C-d>
-vmap <leader>u <C-u>
+" nmap <leader>d <C-d>
+" nmap <leader>u <C-u>
+" vmap <leader>d <C-d>
+" vmap <leader>u <C-u>
 
 " actions
 nmap <Tab>          <action>(NextTab)
 nmap <S-Tab>        <action>(PreviousTab)
 nmap <leader>a      <action>(Run)
-nmap <leader>b      <action>(CloseEditor)
-nmap <leader>c      <action>(CloseAllEditorsButActive)
+nmap <leader>cc     <action>(CloseEditor)
+nmap <leader>co     <action>(CloseAllEditorsButActive)
 nmap <leader>e      <action>(ActivateProjectToolWindow)
 nmap <leader>g      <action>(GotoNextError)
 nmap <leader>h      <action>(HideActiveWindow)
@@ -68,12 +66,12 @@ nmap <leader>s      <action>(QuickChangeScheme)
 nmap <leader>t      <action>(ActivateTerminalToolWindow)
 
 set NERDTree
-map <c-p> :NERDTree<CR>
+map <C-p> :NERDTree<CR>
 let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
 
 
-# Moving Text
+" Moving Text
 vnoremap J :m '>+1<CR>gv = gv
 vnoremap K :m '<-2<CR>gv = gv
 inoremap <C-k> <esc>:m .-2<CR>==
@@ -81,8 +79,12 @@ inoremap <C-j> <esc>:m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
 nnoremap <leader>j :m .+1<CR>==
 
-
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 map f <Plug>(easymotion-bd-f)
 map ; <Plug>(easymotion-s)
+"map w <Plug>(easymotion-w)
+"map b <Plug>(easymotion-b)
+"map e <Plug>(easymotion-e)

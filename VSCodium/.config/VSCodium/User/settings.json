@@ -19,7 +19,7 @@
 
 
 
-    // Neovim Config
+    //Neovim Config
 
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
