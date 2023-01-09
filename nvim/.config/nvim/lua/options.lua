@@ -36,7 +36,7 @@ local options = {
 }
 
 
-  vim.cmd [[colorscheme carbonfox]]
+  vim.cmd [[colorscheme tokyonight-night]]
   vim.cmd [[au CursorHold * checktime]]
 
   vim.opt.shortmess:append "c"

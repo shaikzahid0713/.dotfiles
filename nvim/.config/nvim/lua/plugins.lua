@@ -49,7 +49,6 @@ return packer.startup(function(use)
     use({ "windwp/nvim-autopairs" }) -- Autopairs, integrates with both cmp and treesitter
 
 
-    -- Buffer Line
     use({ "moll/vim-bbye" })
 
     use 'tpope/vim-surround'
@@ -123,7 +122,6 @@ return packer.startup(function(use)
 
     -- snippets
     use({ "L3MON4D3/LuaSnip" }) --snippet engine
-    use({ "rafamadriz/friendly-snippets" }) -- a bunch of snippets to use
 
 
     -- Terminal

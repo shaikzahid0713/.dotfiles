@@ -1,6 +1,6 @@
 vim.cmd [[
 try
-  colorscheme carbonfox
+  colorscheme tokyonight-night 
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark

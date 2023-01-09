@@ -48,7 +48,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -170,6 +171,17 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/shaik/Medium-Blog/Nvim-Blog-Reference/nvim/init.vim",
+                                        "path": "/home/shaik/Medium-Blog/Nvim-Blog-Reference/nvim/init.vim",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Medium-Blog/Nvim-Blog-Reference/nvim/init.vim"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/shaik/hosts",
                                         "path": "/home/shaik/hosts",
                                         "scheme": "file"
@@ -264,17 +276,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Desktop/VsCode/.ssh/id_ed25519"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/VsCode/.ssh/config",
-                                        "path": "/home/shaik/Desktop/VsCode/.ssh/config",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/VsCode/.ssh/config"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
