@@ -1,13 +1,12 @@
 {
     "telemetry.machineId": "b1b3071e801b57296dac78e7232375f6eec4c2ad6cef1d7feb5d4e64488e65ea",
     "backupWorkspaces": {
-        "workspaces": [
+        "workspaces": [],
+        "folders": [
             {
-                "id": "e6cb794c30bf45c6ab74de3526389830",
-                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
+                "folderUri": "file:///home/shaik/Documents/React-Projects"
             }
         ],
-        "folders": [],
         "emptyWindows": []
     },
     "lastKnownMenubarData": {
@@ -48,11 +47,21 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/React-Projects",
+                                        "path": "/home/shaik/Documents/React-Projects",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/React-Projects"
                                 },
                                 {
                                     "id": "openRecentWorkspace",
@@ -64,6 +73,28 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Code/DSA (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/Reference-Projects/Spring-Boot/spring-boot-tutorial",
+                                        "path": "/home/shaik/Documents/Reference-Projects/Spring-Boot/spring-boot-tutorial",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Reference-Projects/Spring-Boot/spring-boot-tutorial"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/Reference-Projects/Full-Stack/Hospital-Management-System-React-and-SpringBoot",
+                                        "path": "/home/shaik/Documents/Reference-Projects/Full-Stack/Hospital-Management-System-React-and-SpringBoot",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Reference-Projects/Full-Stack/Hospital-Management-System-React-and-SpringBoot"
                                 },
                                 {
                                     "id": "openRecentWorkspace",
@@ -130,39 +161,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Projects/Code/Web-Development-Bootcamp"
-                                },
-                                {
-                                    "id": "openRecentWorkspace",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/Projects/WorkSpaces/Notebooks.code-workspace",
-                                        "path": "/home/shaik/Desktop/Projects/WorkSpaces/Notebooks.code-workspace",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/Projects/WorkSpaces/Notebooks (Workspace)"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Projects/Brand-Nav",
-                                        "path": "/home/shaik/Projects/Brand-Nav",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Projects/Brand-Nav"
-                                },
-                                {
-                                    "id": "openRecentWorkspace",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/Projects/WorkSpaces/Web.code-workspace",
-                                        "path": "/home/shaik/Desktop/Projects/WorkSpaces/Web.code-workspace",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/Projects/WorkSpaces/Web (Workspace)"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -431,7 +429,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Workspace"
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -950,45 +948,54 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "Group &&3",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "Group &&4",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "Group &&5",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "&&Next Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "&&Previous Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "Group &&Left",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "Group &&Right",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "Group &&Above",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "Group &&Below",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -1746,18 +1753,19 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#0e0e0e",
+    "themeBackground": "#1e1e2e",
     "windowSplash": {
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#d5d8da",
-            "background": "#0e0e0e",
-            "editorBackground": "#0e0e0e",
-            "titleBarBackground": "#0e0e0e",
-            "activityBarBackground": "#080808",
-            "sideBarBackground": "#0e0e0e",
-            "statusBarBackground": "#0e0e0e",
-            "statusBarNoFolderBackground": "#1c1e26"
+            "foreground": "#cdd6f4",
+            "background": "#1e1e2e",
+            "editorBackground": "#1e1e2e",
+            "titleBarBackground": "#11111b",
+            "activityBarBackground": "#11111b",
+            "sideBarBackground": "#181825",
+            "statusBarBackground": "#11111b",
+            "statusBarNoFolderBackground": "#11111b",
+            "windowBorder": "rgba(0, 0, 0, 0)"
         },
         "layoutInfo": {
             "sideBarSide": "left",
@@ -1771,11 +1779,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "workspaceIdentifier": {
-                "id": "e6cb794c30bf45c6ab74de3526389830",
-                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
-            },
-            "backupPath": "/home/shaik/.config/VSCodium/Backups/e6cb794c30bf45c6ab74de3526389830",
+            "folder": "file:///home/shaik/Documents/React-Projects",
+            "backupPath": "/home/shaik/.config/VSCodium/Backups/87af0f24566274605549ace773a744cb",
             "uiState": {
                 "mode": 1,
                 "x": 0,

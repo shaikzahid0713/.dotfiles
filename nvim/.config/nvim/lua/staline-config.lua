@@ -6,7 +6,7 @@ require'staline'.setup{
 		},
 		mid  = {'lsp'},
 		right= {
-			'cool_symbol', '  ',
+			'cool_symbol', ' ',
 			vim.bo.fileencoding:upper(), 'right_sep_double', '-line_column'
 		}
 	},
