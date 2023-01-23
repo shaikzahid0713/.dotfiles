@@ -13,6 +13,10 @@ export PATH="$HOME/.local/bin:$PATH"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster"
 
+
+# tre 
+tre() { command tre "$@" -e && source "/tmp/tre_aliases_$USER" 2>/dev/null; }
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -181,12 +185,14 @@ alias b="brillo"
 alias c="clear"
 alias e="exit"
 alias f="ranger" 
+alias l="exa -al"
 alias n="nvim" 
 alias p="paru"
 alias pu="paru -Rnu"
 alias pi="paru -Syu"
 alias v="codium" 
 alias z="nvim ~/.zshrc"
+alias zz="zoxide"
 alias bd="sudo brillo -U"
 alias bu="sudo brillo -A"
 alias dp="cd ~/Desktop/"

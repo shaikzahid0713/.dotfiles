@@ -1,1 +1,3 @@
-
+VSCodium/
+!VSCodium/.config/VSCodium/settings.json
+!VSCodium/.config/VSCodium/product.json

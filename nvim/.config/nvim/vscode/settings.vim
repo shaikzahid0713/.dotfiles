@@ -39,8 +39,8 @@ nnoremap , $
 nnoremap z 0
 nnoremap ; %
 
-nnoremap dda ggdG
-nnoremap yya ggyG
+nnoremap df ggdG
+nnoremap yf ggyG
 
 nnoremap <silent> <C-w>s :call <SID>split('h')<CR>
 xnoremap <silent> <C-w>s :call <SID>split('h')<CR>

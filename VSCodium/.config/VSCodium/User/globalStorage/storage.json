@@ -1,7 +1,12 @@
 {
     "telemetry.machineId": "b1b3071e801b57296dac78e7232375f6eec4c2ad6cef1d7feb5d4e64488e65ea",
     "backupWorkspaces": {
-        "workspaces": [],
+        "workspaces": [
+            {
+                "id": "e6cb794c30bf45c6ab74de3526389830",
+                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
+            }
+        ],
         "folders": [
             {
                 "folderUri": "file:///home/shaik/Documents/React-Projects"
@@ -47,21 +52,11 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/React-Projects",
-                                        "path": "/home/shaik/Documents/React-Projects",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/React-Projects"
                                 },
                                 {
                                     "id": "openRecentWorkspace",
@@ -73,6 +68,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/Code/DSA (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/React-Projects",
+                                        "path": "/home/shaik/Documents/React-Projects",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/React-Projects"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -429,7 +435,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
+                        "label": "Close &&Workspace"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -642,7 +648,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Panel"
+                                    "label": "&&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -948,54 +955,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1196,8 +1194,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1779,8 +1776,11 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/shaik/Documents/React-Projects",
-            "backupPath": "/home/shaik/.config/VSCodium/Backups/87af0f24566274605549ace773a744cb",
+            "workspaceIdentifier": {
+                "id": "e6cb794c30bf45c6ab74de3526389830",
+                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
+            },
+            "backupPath": "/home/shaik/.config/VSCodium/Backups/e6cb794c30bf45c6ab74de3526389830",
             "uiState": {
                 "mode": 1,
                 "x": 0,

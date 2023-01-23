@@ -272,5 +272,15 @@
       "command": "-editor.action.commentLine",
       "when": "editorTextFocus && !editorReadonly"
     },
+    {
+      "key": "alt+p",
+      "command": "svgPreview.showPreviewToSide",
+      "when": "resourceExtname == '.svg'"
+    },
+    {
+      "key": "ctrl+k v",
+      "command": "-svgPreview.showPreviewToSide",
+      "when": "resourceExtname == '.svg'"
+    },
  ]
  

@@ -88,7 +88,7 @@ local mappings = {
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>wqall!<CR>", "Quit" },
-  ["d"] = { "<cmd>Bdelete<CR>", "Close Buffer" },
+  ["k"] = { "<cmd>Bdelete<CR>", "Kill Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
 
 -- Competitive Programming
@@ -121,7 +121,7 @@ local mappings = {
 -- Packer
   p = {
     name = "Packer",
-    c = { "<cmd>PackerCompile<cr>", "Compile" },
+    c = { "<cmd>PackerClean<cr>", "Clean" },
     i = { "<cmd>PackerInstall<cr>", "Install" },
     s = { "<cmd>PackerSync<cr>", "Sync" },
     t = { "<cmd>PackerStatus<cr>", "Status" },
