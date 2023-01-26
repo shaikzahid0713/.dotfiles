@@ -2,8 +2,8 @@
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
 
-"" Map <leader>d to start debug
 "map <leader>d <Action>(Debug)
+"" Map <leader>d to start debug
 
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
@@ -45,6 +45,10 @@ inoremap <C-k> <Esc>:m -2<CR>gi
 " nmap <leader>u <C-u>
 " vmap <leader>d <C-d>
 " vmap <leader>u <C-u>
+
+nmap z 0
+nmap m $
+nmap , %
 
 " actions
 nmap <Tab>          <action>(NextTab)

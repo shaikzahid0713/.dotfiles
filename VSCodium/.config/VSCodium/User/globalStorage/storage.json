@@ -1,15 +1,10 @@
 {
     "telemetry.machineId": "b1b3071e801b57296dac78e7232375f6eec4c2ad6cef1d7feb5d4e64488e65ea",
     "backupWorkspaces": {
-        "workspaces": [
-            {
-                "id": "e6cb794c30bf45c6ab74de3526389830",
-                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
-            }
-        ],
+        "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/shaik/Documents/React-Projects"
+                "folderUri": "file:///home/shaik/Documents/FrontEnd"
             }
         ],
         "emptyWindows": []
@@ -52,11 +47,32 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/FrontEnd",
+                                        "path": "/home/shaik/Documents/FrontEnd",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/FrontEnd"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/CarFullStack-FrontEnd",
+                                        "path": "/home/shaik/Documents/CarFullStack-FrontEnd",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/CarFullStack-FrontEnd"
                                 },
                                 {
                                     "id": "openRecentWorkspace",
@@ -117,17 +133,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/CarFullStack-FrontEnd",
-                                        "path": "/home/shaik/Documents/CarFullStack-FrontEnd",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/CarFullStack-FrontEnd"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/shaik/Desktop/Projects/Notebooks/Java",
                                         "path": "/home/shaik/Desktop/Projects/Notebooks/Java",
                                         "scheme": "file"
@@ -156,17 +161,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/ArchConfig"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Projects/Code/Web-Development-Bootcamp",
-                                        "path": "/home/shaik/Projects/Code/Web-Development-Bootcamp",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Projects/Code/Web-Development-Bootcamp"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -338,13 +332,6 @@
                         "submenu": {
                             "items": [
                                 {
-                                    "id": "github.copyVscodeDevLinkFile",
-                                    "label": "Copy vscode.dev Link"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)...",
                                     "enabled": false
@@ -435,7 +422,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Workspace"
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -631,7 +618,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -644,7 +632,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleActivityBarVisibility",
-                                    "label": "&&Activity Bar"
+                                    "label": "&&Activity Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
@@ -955,45 +944,54 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "Group &&3",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "Group &&4",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "Group &&5",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "&&Next Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "&&Previous Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "Group &&Left",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "Group &&Right",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "Group &&Above",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "Group &&Below",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -1768,19 +1766,16 @@
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
-            "activityBarWidth": 0,
-            "sideBarWidth": 0,
+            "activityBarWidth": 48,
+            "sideBarWidth": 266,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "workspaceIdentifier": {
-                "id": "e6cb794c30bf45c6ab74de3526389830",
-                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
-            },
-            "backupPath": "/home/shaik/.config/VSCodium/Backups/e6cb794c30bf45c6ab74de3526389830",
+            "folder": "file:///home/shaik/Documents/FrontEnd",
+            "backupPath": "/home/shaik/.config/VSCodium/Backups/d51ee951eb01288e69613c20232ececa",
             "uiState": {
                 "mode": 1,
                 "x": 0,

@@ -1,5 +1,11 @@
 [
     {
+      "command": "vscode-neovim.compositeEscape1",
+      "key": "j",
+      "when": "neovim.mode == insert && editorTextFocus",
+      "args": "j"
+    },
+    {
       "key": "alt+l",
       "command": "cursorRight",
       "when": "textInputFocus"
@@ -185,11 +191,6 @@
     },
     {
       "key": "ctrl+;",
-      "command": "vscode-neovim.escape",
-      "when": "editorTextFocus && neovim.init"
-    },
-    {
-      "key": "alt+;",
       "command": "vscode-neovim.escape",
       "when": "editorTextFocus && neovim.init"
     },
