@@ -1,5 +1,9 @@
 [
     {
+      "command": "-vscode-neovim.send",
+      "key": "ctrl+a"
+    },
+    {
       "command": "vscode-neovim.compositeEscape1",
       "key": "j",
       "when": "neovim.mode == insert && editorTextFocus",

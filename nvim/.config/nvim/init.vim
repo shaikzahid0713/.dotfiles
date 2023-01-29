@@ -13,7 +13,6 @@ else
     lua require "lsp-config" 
     lua require "alpha-config" 
     lua require "autopairs" 
-    lua require "bufferline-config" 
     lua require "cmp-autocomplete" 
     lua require "color-scheme" 
     lua require "comments-config" 

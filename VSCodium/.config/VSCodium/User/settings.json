@@ -911,4 +911,5 @@
     },
     "tabnine.experimentalAutoImports": true,
     "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.activityBar.visible": false,
 }

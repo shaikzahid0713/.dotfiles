@@ -40,8 +40,8 @@ else
 
     -- Navigation
     keymap("n", "z", "0", opts) --Start of Line
-    keymap("n", "m", "$", opts) -- End of Line
-    keymap("n", ",", "%", opts) -- Move between Braces {}()[]
+    keymap("n", ",", "$", opts) -- End of Line
+    keymap("n", ";", "%", opts) -- Move between Braces {}()[]
 
     --Copy whole file
     keymap("n", "yya", "ggyG", opts)
