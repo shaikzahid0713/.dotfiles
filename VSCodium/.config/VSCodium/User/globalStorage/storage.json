@@ -1,13 +1,12 @@
 {
     "telemetry.machineId": "b1b3071e801b57296dac78e7232375f6eec4c2ad6cef1d7feb5d4e64488e65ea",
     "backupWorkspaces": {
-        "workspaces": [
+        "workspaces": [],
+        "folders": [
             {
-                "id": "e6cb794c30bf45c6ab74de3526389830",
-                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
+                "folderUri": "file:///home/shaik/.dotfiles/nvim/.config/nvim"
             }
         ],
-        "folders": [],
         "emptyWindows": []
     },
     "lastKnownMenubarData": {
@@ -52,6 +51,28 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/.dotfiles/nvim/.config/nvim",
+                                        "path": "/home/shaik/.dotfiles/nvim/.config/nvim",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles/nvim/.config/nvim"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Neovim/nvim/.config/nvim",
+                                        "path": "/home/shaik/Neovim/nvim/.config/nvim",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Neovim/nvim/.config/nvim"
                                 },
                                 {
                                     "id": "openRecentWorkspace",
@@ -142,29 +163,40 @@
                                     "label": "~/Desktop/Projects/Notebooks/Java"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Programming/DSA",
-                                        "path": "/home/shaik/Programming/DSA",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Programming/DSA"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/ArchConfig",
-                                        "path": "/home/shaik/ArchConfig",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/ArchConfig"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Downloads/music.sql",
+                                        "path": "/home/shaik/Downloads/music.sql",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/music.sql"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/1.txt",
+                                        "path": "/home/shaik/1.txt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/1.txt"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/tre",
+                                        "path": "/home/shaik/tre",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/tre"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -225,17 +257,6 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/1.txt",
-                                        "path": "/home/shaik/1.txt",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/1.txt"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/shaik/Downloads/Temp/Raghu%20Sir%20Spring%20Boot/Latest%20Notes/Jan/jan%202/SpringBoot7AM_02012021.txt",
                                         "path": "/home/shaik/Downloads/Temp/Raghu Sir Spring Boot/Latest Notes/Jan/jan 2/SpringBoot7AM_02012021.txt",
                                         "scheme": "file"
@@ -253,28 +274,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Desktop/VsCode/.ssh/known_hosts"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/VsCode/.ssh/id_ed25519.pub",
-                                        "path": "/home/shaik/Desktop/VsCode/.ssh/id_ed25519.pub",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/VsCode/.ssh/id_ed25519.pub"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/VsCode/.ssh/id_ed25519",
-                                        "path": "/home/shaik/Desktop/VsCode/.ssh/id_ed25519",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/VsCode/.ssh/id_ed25519"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -430,7 +429,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Workspace"
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -949,45 +948,54 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "Group &&3",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "Group &&4",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "Group &&5",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "&&Next Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "&&Previous Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "Group &&Left",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "Group &&Right",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "Group &&Above",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "Group &&Below",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -1745,19 +1753,18 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#1e1e2e",
+    "themeBackground": "#0e0e0e",
     "windowSplash": {
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#cdd6f4",
-            "background": "#1e1e2e",
-            "editorBackground": "#1e1e2e",
-            "titleBarBackground": "#11111b",
-            "activityBarBackground": "#11111b",
-            "sideBarBackground": "#181825",
-            "statusBarBackground": "#11111b",
-            "statusBarNoFolderBackground": "#11111b",
-            "windowBorder": "rgba(0, 0, 0, 0)"
+            "foreground": "#d5d8da",
+            "background": "#0e0e0e",
+            "editorBackground": "#0e0e0e",
+            "titleBarBackground": "#0e0e0e",
+            "activityBarBackground": "#080808",
+            "sideBarBackground": "#0e0e0e",
+            "statusBarBackground": "#0e0e0e",
+            "statusBarNoFolderBackground": "#1c1e26"
         },
         "layoutInfo": {
             "sideBarSide": "left",
@@ -1771,11 +1778,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "workspaceIdentifier": {
-                "id": "e6cb794c30bf45c6ab74de3526389830",
-                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
-            },
-            "backupPath": "/home/shaik/.config/VSCodium/Backups/e6cb794c30bf45c6ab74de3526389830",
+            "folder": "file:///home/shaik/.dotfiles/nvim/.config/nvim",
+            "backupPath": "/home/shaik/.config/VSCodium/Backups/d9313c365bd2306591b287e6b124f669",
             "uiState": {
                 "mode": 1,
                 "x": 0,

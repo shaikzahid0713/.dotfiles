@@ -11,7 +11,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="awesomepanda"
 
 
 # tre 
@@ -107,34 +107,6 @@ function zle-keymap-select {
     echo -ne '\e[5 q'
   fi
 }
-
-
-typeset -ga POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-    vi_mode
-    dir
-    vcs
-    newline
-    prompt_char
-)
-typeset -g POWERLEVEL9K_MODE=nerdfont-complete
-typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-typeset -g POWERLEVEL9K_VI_INSERT_MODE_STRING='  INSERT'
-typeset -g POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND=11
-typeset -g POWERLEVEL9K_VI_COMMAND_MODE_STRING='  NORMAL'
-typeset -g POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND=10
-typeset -g POWERLEVEL9K_VI_VISUAL_MODE_STRING='  VISUAL'
-typeset -g POWERLEVEL9K_VI_MODE_VISUAL_FOREGROUND=12
-typeset -g POWERLEVEL9K_VI_OVERWRITE_MODE_STRING='  REPLACE'
-typeset -g POWERLEVEL9K_VI_MODE_OVERWRITE_FOREGROUND=9
-typeset -g POWERLEVEL9K_PROMPT_CHAR_OVERWRITE_STATE=true
-typeset -g POWERLEVEL9K_PROMPT_CHAR_BACKGROUND=
-typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_FOREGROUND=11
-typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VICMD_FOREGROUND=10
-typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIVIS_FOREGROUND=12
-typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIOWR_FOREGROUND=9
-typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_{VIINS,VICMD,VIVIS,VIOWR}_CONTENT_EXPANSION=' ☰ '
-
-
 
 
 source $ZSH/oh-my-zsh.sh

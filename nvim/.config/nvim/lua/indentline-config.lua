@@ -67,3 +67,4 @@ indent_blankline.setup({
 	   "IndentBlanklineIndent6",
 	 },
 })
+

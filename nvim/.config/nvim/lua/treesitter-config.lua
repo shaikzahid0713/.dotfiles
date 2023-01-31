@@ -1,7 +1,7 @@
 local configs = require("nvim-treesitter.configs")
 configs.setup {
-  ensure_installed = "all",
-  sync_install = false, 
+  ensure_installed = {"c", "cpp", "python", "lua", "java", "javascript", },
+  sync_install = false,
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {
     enable = true, -- false will disable the whole extension
@@ -19,3 +19,4 @@ configs.setup {
     -- termcolors = {} -- table of colour name strings
   }
 }
+

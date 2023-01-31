@@ -88,8 +88,9 @@ local mappings = {
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>wqall!<CR>", "Quit" },
-  ["k"] = { "<cmd>Bdelete<CR>", "Kill Buffer" },
-  ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+  ["k"] = { "<cmd>bdelete<CR>", "Kill Buffer" },
+  ["p"] = { "<cmd>Lazy<CR>", "Plugin Manager" },
+  ["u"] = { "<cmd>UndotreeToggle<CR>", "Undo-Tree" },
 
 -- Competitive Programming
   c = {
@@ -117,18 +118,7 @@ local mappings = {
     p = {"<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects"},
   },
 
-
--- Packer
-  p = {
-    name = "Packer",
-    c = { "<cmd>PackerClean<cr>", "Clean" },
-    i = { "<cmd>PackerInstall<cr>", "Install" },
-    s = { "<cmd>PackerSync<cr>", "Sync" },
-    t = { "<cmd>PackerStatus<cr>", "Status" },
-    u = { "<cmd>PackerUpdate<cr>", "Update" },
-  },
-
-    --Git
+  --Git
   g = {
     name = "Git",
     g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
@@ -211,3 +201,4 @@ local mappings = {
 
 which_key.setup(setup)
 which_key.register(mappings, opts)
+

@@ -8,3 +8,4 @@ nmap b <Plug>(easymotion-b)
 nmap e <Plug>(easymotion-e)
 
 
+

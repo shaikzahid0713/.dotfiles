@@ -910,6 +910,6 @@
         "strings": "on"
     },
     "tabnine.experimentalAutoImports": true,
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "Dark Horizon",
     "workbench.activityBar.visible": false,
 }

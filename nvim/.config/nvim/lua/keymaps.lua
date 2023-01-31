@@ -54,6 +54,7 @@ else
     keymap("n", "<tab>", ":bnext<cr>", opts)
     keymap("n", "<s-tab>", ":bprevious<cr>", opts)
     keymap("n", "<leader>so", ":BufferLineSortByExtension<cr>", opts)
+    keymap("n", "<leader>h", ":nohlsearch<cr>", opts)
 
     -- move text up and down
     keymap("n", "<a-j>", "<esc>:m .+1<cr>==gi", opts)
@@ -97,7 +98,4 @@ else
 
 
 end
-
-
-
 
