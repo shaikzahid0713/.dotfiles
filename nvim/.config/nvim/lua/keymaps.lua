@@ -44,8 +44,8 @@ else
     keymap("n", ";", "%", opts) -- Move between Braces {}()[]
 
     --Copy whole file
-    keymap("n", "yya", "ggyG", opts)
-    keymap("n", "dda", "ggdG", opts)
+    keymap("n", "yf", "ggyG", opts)
+    keymap("n", "df", "ggdG", opts)
 
     --Delete 
     keymap("i", "<C-backspace>", "<Esc>dbxi", opts)
@@ -70,7 +70,6 @@ else
     keymap("i", "kk", "<esc>la", opts)
     keymap("i", "ll", "<esc>o", opts)
     keymap("i", "hh", "<esc>O", opts)
-    keymap("i", "//", "<esc>g", opts)
 
     -- visual --
     -- stay in indent mode
@@ -84,12 +83,12 @@ else
 
     -- Visual Block --
     -- Move text up and down
+     --Terminal --
     keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
     keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
     keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
     keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
-     --Terminal --
      --Better terminal navigation
      keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
      keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)

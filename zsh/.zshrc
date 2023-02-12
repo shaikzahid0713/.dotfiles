@@ -5,6 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/node/bin/:$PATH
+export PATH=$HOME/cargo/bin/:$PATH
 export PATH="$HOME/.local/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -78,6 +79,7 @@ tre() { command tre "$@" -e && source "/tmp/tre_aliases_$USER" 2>/dev/null; }
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    git z
     git
     vi-mode
 )
@@ -163,8 +165,7 @@ alias p="paru"
 alias pu="paru -Rnu"
 alias pi="paru -Syu"
 alias v="codium" 
-alias z="nvim ~/.zshrc"
-alias zz="zoxide"
+alias zs="nvim ~/.zshrc"
 alias bd="sudo brillo -U"
 alias bu="sudo brillo -A"
 alias dp="cd ~/Desktop/"

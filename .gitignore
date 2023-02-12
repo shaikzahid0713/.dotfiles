@@ -1,3 +1,4 @@
 VSCodium/
+nvim/.config/nvim/lazy-lock.json
 !VSCodium/.config/VSCodium/settings.json
 !VSCodium/.config/VSCodium/product.json

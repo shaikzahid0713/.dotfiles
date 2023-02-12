@@ -1,7 +1,7 @@
 {
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "fluent-icons",
-    "editor.fontFamily": "'cascadia code'",
+    "editor.fontFamily": "cascadia code",
     "editor.fontLigatures": true,
     "editor.fontSize": 18,
     "files.autoSave": "afterDelay",
@@ -12,7 +12,7 @@
     "git.suggestSmartCommit": false,
     "editor.lineNumbers": "relative",
     "search.showLineNumbers": true,
-	"python.languageServer": "Pylance",
+	"python.languageServer": "Jedi",
 
 
 
@@ -372,20 +372,13 @@
             }
         ]
         },
-
-        {
-        "key": "m",
-        "name": "minimap",
-        "type": "command",
-        "command": "editor.action.toggleMinimap"
-        },
-        {
+    /*  { 
         "key": "n",
         "name": "highlight",
         "type": "command",
         "command": "vscode-neovim.send",
         "args": ":noh<CR>"
-        },
+        }, */
         {
             "key": "r",
             "name": "Run Code",
@@ -422,12 +415,6 @@
         "name": "Show...",
         "type": "bindings",
         "bindings": [
-            {
-            "key": "e",
-            "name": "Show explorer",
-            "type": "command",
-            "command": "workbench.view.explorer"
-            },
             {
             "key": "s",
             "name": "Show search",
@@ -478,13 +465,6 @@
             }
         ]
         },
-        // {
-        // "key": "t",
-        // "name": "Terminal...",
-        // "type": "bindings",
-        // "bindings": [
-        // ] 
-        // },
         {
         "key": "T",
         "name": "UI toggles...",
@@ -900,7 +880,7 @@
     "notebook.lineNumbers": "on",
     "editor.smoothScrolling": true,
     "workbench.list.smoothScrolling": true,
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "editor.linkedEditing": true,
     "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
@@ -911,5 +891,8 @@
     },
     "tabnine.experimentalAutoImports": true,
     "workbench.colorTheme": "Dark Horizon",
+    "editor.stickyScroll.enabled": true,
+    "hediet.vscode-drawio.resizeImages": null,
+    "clangd.path": "/home/shaik/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
     "workbench.activityBar.visible": false,
 }

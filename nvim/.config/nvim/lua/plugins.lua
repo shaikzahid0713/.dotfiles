@@ -1,85 +1,83 @@
 return {
-  "folke/which-key.nvim",
-  "ChristianChiarulli/vscode-easymotion",
-  "phaazon/hop.nvim",
 
-  "kyazdani42/nvim-tree.lua",
-  "kyazdani42/nvim-web-devicons",
-  "akinsho/toggleterm.nvim",
-  'folke/tokyonight.nvim',
-  {'neovim/nvim-lspconfig'},             -- Required
-  {'williamboman/mason.nvim'},           -- Optional
-  {'williamboman/mason-lspconfig.nvim'}, -- Optional
+    "folke/which-key.nvim",
+    "ChristianChiarulli/vscode-easymotion",
+    "phaazon/hop.nvim",
 
-  {'lewis6991/gitsigns.nvim'},
+    "nvim-tree/nvim-tree.lua",
+    "nvim-tree/nvim-web-devicons",
+    "akinsho/toggleterm.nvim",
+    'folke/tokyonight.nvim',
 
-  {'tpope/vim-surround'},
+    {'lewis6991/gitsigns.nvim'},
 
-  {'mbbill/undotree'},
+    {
+        'tpope/vim-surround',
+    },
+    {
+        'tpope/vim-fugitive',
+    },
 
-  { "goolord/alpha-nvim" },
+    {'mbbill/undotree'},
 
-  -- Comments
-  { "numToStr/Comment.nvim" },
-  { "JoosepAlviste/nvim-ts-context-commentstring" },
+    { "goolord/alpha-nvim" },
 
-  -- Indentation
-  "lukas-reineke/indent-blankline.nvim",
+    -- Comments
+    { "numToStr/Comment.nvim" },
+    { "JoosepAlviste/nvim-ts-context-commentstring" },
 
-  -- Treesitter
-  {
-      "nvim-treesitter/nvim-treesitter",
-  },
+    -- Indentation
+    "lukas-reineke/indent-blankline.nvim",
 
-  {
-    'p00f/nvim-ts-rainbow'
-  },
+    -- Treesitter
+    {
+        "nvim-treesitter/nvim-treesitter",
+    },
 
-
-  -- Telescope
-  { "nvim-lua/plenary.nvim" },
-  { "nvim-telescope/telescope.nvim" },
-  { 'nvim-telescope/telescope-media-files.nvim' },
-  { 'nvim-lua/popup.nvim'},
-
-  --  BufferLine
-  {
-    'akinsho/bufferline.nvim',
-    dependencies = 'kyazdani42/nvim-web-devicons'
-  },
-
-  -- Snippets
-  {'L3MON4D3/LuaSnip'},             -- Required
-
-  { "windwp/nvim-autopairs" },
+    {
+        'p00f/nvim-ts-rainbow'
+    },
 
 
-  -- Lualine
-  {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'kyazdani42/nvim-web-devicons' }
-  },
+    -- Telescope
+    { "nvim-lua/plenary.nvim" },
+    { "nvim-telescope/telescope.nvim" },
+
+    --  BufferLine
+    {
+        'akinsho/bufferline.nvim',
+        dependencies = 'nvim-tree/nvim-web-devicons'
+    },
+
+    { "windwp/nvim-autopairs" },
+
+
+    -- Lualine
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
 
     -- Lsp 
-  {
-    'VonHeikemen/lsp-zero.nvim',
-    branch = 'v1.x',
-    dependencies = {
-      -- LSP Support
-      {'neovim/nvim-lspconfig'},             -- Required
-      {'williamboman/mason.nvim'},           -- Optional
-      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+    {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v1.x',
+        dependencies = {
+        -- LSP Support
+        {'neovim/nvim-lspconfig'},             -- Required
+        {'williamboman/mason.nvim'},           -- Optional
+        {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-      -- Autocompletion
-      {'hrsh7th/nvim-cmp'},         -- Required
-      {'hrsh7th/cmp-nvim-lsp'},     -- Required
-      {'hrsh7th/cmp-buffer'},       -- Optional
-      {'hrsh7th/cmp-path'},         -- Optional
-      {'saadparwaiz1/cmp_luasnip'}, -- Optional
-      {'hrsh7th/cmp-nvim-lua'},     -- Optional
+        -- Autocompletion
+        {'hrsh7th/nvim-cmp'},         -- Required
+        {'hrsh7th/cmp-nvim-lsp'},     -- Required
+        {'hrsh7th/cmp-buffer'},       -- Optional
+        {'hrsh7th/cmp-path'},         -- Optional
+        {'saadparwaiz1/cmp_luasnip'}, -- Optional
+        {'hrsh7th/cmp-nvim-lua'},     -- Optional
 
-      -- Snippets
-      {'L3MON4D3/LuaSnip'},             -- Required
+        -- Snippets
+        {'L3MON4D3/LuaSnip'},             -- Required
+        }
     }
-  }
 }
