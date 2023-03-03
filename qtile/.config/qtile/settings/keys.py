@@ -67,6 +67,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "m", lazy.spawn("mailspring")),
     ([mod], "n", lazy.spawn("notion-app")),
     ([mod], "f", lazy.spawn("figma-linux")),
+    ([mod], "t", lazy.spawn("ferdium")),
     ([mod], "g", lazy.spawn("gimp")),
     ([mod], "o", lazy.spawn("obs")),
 

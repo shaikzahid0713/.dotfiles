@@ -13,16 +13,12 @@
     "editor.lineNumbers": "relative",
     "search.showLineNumbers": true,
 	"python.languageServer": "Jedi",
+    "vscode-neovim.useCtrlKeysForInsertMode": false,
 
 
 
-
-
-    //Neovim Config
-    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-    "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.vim",
-    "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
+    "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.lua",
 
 
     "whichkey.delay": 0,
@@ -34,6 +30,7 @@
         "type": "command",
         "command": "workbench.action.showCommands"
         },
+/* 
         {
         "key": "/",
         "name": "comment",
@@ -41,6 +38,7 @@
         "command": "vscode-neovim.send",
         "args": "<C-/>"
         },
+ */        
         {
         "key": "p",
         "name": "Open Live Preview",
@@ -107,18 +105,6 @@
             "name": "Close other editors",
             "type": "command",
             "command": "workbench.action.closeOtherEditors"
-            },
-            {
-            "key": "n",
-            "name": "Next editor",
-            "type": "command",
-            "command": "workbench.action.nextEditor"
-            },
-            {
-            "key": "p",
-            "name": "Previous editor",
-            "type": "command",
-            "command": "workbench.action.previousEditor"
             },
             {
             "key": "N",
@@ -875,8 +861,6 @@
     },
     "editor.fontWeight": "normal",
     "explorer.confirmDelete": false,
-    "findJump.onlyVisibleRanges": false,
-    "findJump.jumpChars": "jfdksa;wibceghlmnopqrtuvxyz",
     "notebook.lineNumbers": "on",
     "editor.smoothScrolling": true,
     "workbench.list.smoothScrolling": true,
@@ -889,10 +873,10 @@
         "comments": "on",
         "strings": "on"
     },
-    "tabnine.experimentalAutoImports": true,
     "workbench.colorTheme": "Dark Horizon",
     "editor.stickyScroll.enabled": true,
     "hediet.vscode-drawio.resizeImages": null,
     "clangd.path": "/home/shaik/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
+    "jupyter.disableJupyterAutoStart": true,
     "workbench.activityBar.visible": false,
 }

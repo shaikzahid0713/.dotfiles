@@ -1,35 +1,45 @@
 inoremap jk <Esc>
 inoremap kj <Esc>
 
-set number relativenumber
-set idearefactormode=keep
-set ideajoin
-set surround
-set easymotion
-set ignorecase
-set smartcase
-set autoindent
-
-set timeoutlen = 50
-set which-key
-let g:WhichKey_ShowVimActions = "true"
-let g:WhichKey_DefaultDelay = 0
-
-
 let mapleader = " "
-
-# noremap <Esc> <nop>
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
-
-nnoremap <C-j> :m +1<CR>
-nnoremap <C-k> :m -2<CR>
-inoremap <C-j> <Esc>:m +1<CR>gi
-inoremap <C-k> <Esc>:m -2<CR>gi
 
 nmap z 0
 nmap m $
 nmap ; %
+
+nmap df ggdG
+nmap yf ggyG
+nmap <CR> o<Esc>
+nmap <S-Enter> O<Esc>
+
+set number relativenumber
+set idearefactormode=keep
+set ideajoin
+set ignorecase
+set smartcase
+set autoindent
+set timeoutlen = 150
+
+set which-key
+let g:WhichKey_ShowVimActions = "true"
+let g:WhichKey_DefaultDelay = 0
+
+set NERDTree
+map <C-p> :NERDTree<CR>
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
+
+set surround
+set highlightedyank
+let g:highlightedyank_highlight_color = "rgba(172, 205, 218, 1)"
+let g:highlightedyank_highlight_duration = 50
+
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-commentary'
+
+set easymotion
+map f <Plug>(easymotion-bd-f)
+map , <Plug>(easymotion-s)
 
 " actions
 nmap <Tab>          <action>(NextTab)
@@ -51,24 +61,3 @@ nmap <leader>q      <action>(Stop)
 nmap <leader>r      <action>(ReformatCode)
 nmap <leader>s      <action>(GlobalSettings)
 nmap <leader>t      <action>(ActivateTerminalToolWindow)
-
-set NERDTree
-map <C-p> :NERDTree<CR>
-let g:NERDTreeMapActivateNode='l'
-let g:NERDTreeMapJumpParent='h'
-
-
-" Moving Text
-vnoremap J :m '>+1<CR>gv = gv
-vnoremap K :m '<-2<CR>gv = gv
-inoremap <C-k> <esc>:m .-2<CR>==
-inoremap <C-j> <esc>:m .+1<CR>==
-nnoremap <leader>k :m .-2<CR>==
-nnoremap <leader>j :m .+1<CR>==
-
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
-Plug 'easymotion/vim-easymotion'
-map f <Plug>(easymotion-bd-f)
-map , <Plug>(easymotion-s)

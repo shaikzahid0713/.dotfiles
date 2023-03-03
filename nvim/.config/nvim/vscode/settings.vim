@@ -42,6 +42,10 @@ nnoremap ; %
 nnoremap df ggdG
 nnoremap yf ggyG
 
+" nnoremap <tab> :call VSCodeNotify('workbench.action.nextEditor')<CR>
+" nnoremap <S-tab> :call VSCodeNotify('workbench.action.previousEditor')<CR>
+
+
 nnoremap <silent> <C-w>s :call <SID>split('h')<CR>
 xnoremap <silent> <C-w>s :call <SID>split('h')<CR>
 

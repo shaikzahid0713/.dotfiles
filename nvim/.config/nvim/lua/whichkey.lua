@@ -81,37 +81,15 @@ local opts = {
 local mappings = {
 
     ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-    ["b"] = {
-        "<cmd>lua require('telescope.builtin').buffers()<cr>",
-        "Buffers",
-    },
-    ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-    ["k"] = { "<cmd>bdelete<CR>", "Kill Buffer" },
-    ["p"] = { "<cmd>Lazy<CR>", "Plugin Manager" },
-    ["q"] = { "<cmd>wqall!<CR>", "Quit" },
+    ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" }, -- File Explorer
+    ["k"] = { "<cmd>bdelete<CR>", "Kill Buffer" },  -- Close current file
+    ["m"] = { "<cmd>Mason<CR>", "Mason" },  -- Mason UI for LSP Management
+    ["p"] = { "<cmd>Lazy<CR>", "Plugin Manager" }, -- Invoking plugin manager
+    ["q"] = { "<cmd>wqall!<CR>", "Quit" }, -- Quit Neovim after saving the file
     ["r"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Reformat Code" },
-    ["u"] = { "<cmd>UndotreeToggle<CR>", "Undo-Tree" },
-    ["w"] = { "<cmd>w!<CR>", "Save" },
+    ["u"] = { "<cmd>lua require('undotree').toggle()<CR>", "Undo-Tree" }, -- Undo History
+    ["w"] = { "<cmd>w!<CR>", "Save" }, -- Save current file
 
-
-    --Configuration Files
-    c = {
-        name = "Configuration",
-        i = { "<cmd>e $MYVIMRC<cr>", "Init File" },
-        p = { "<cmd>e ~/.config/nvim/lua/plugins.lua<cr>", "Plugins" },
-        k = { "<cmd>e ~/.config/nvim/lua/keymaps.lua<cr>", "Keymaps" },
-        o = { "<cmd>e ~/.config/nvim/lua/options.lua<cr>", "Options" },
-        w = { "<cmd>e ~/.config/nvim/lua/whichkey.lua<cr>", "Which-Key" },
-    },
-
-
-    -- Telescope
-    f = {
-        name = "File Search",
-        f = { "<cmd>lua require('telescope.builtin').find_files()<cr>", "Find files" },
-        t = { "<cmd>Telescope live_grep <cr>", "Find Text Pattern In All Files" },
-        r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
-    },
 
     --Git
     g = {
@@ -136,7 +114,8 @@ local mappings = {
         },
     },
 
-    -- Language Server Protocol
+
+    -- Language Support
     l = {
         name = "LSP",
         a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
@@ -149,14 +128,23 @@ local mappings = {
             "Workspace Symbols",
         },
     },
+
+    -- Telescope
+    f = {
+        name = "File Search",
+        c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
+        f = { "<cmd>lua require('telescope.builtin').find_files()<cr>", "Find files" },
+        t = { "<cmd>Telescope live_grep <cr>", "Find Text Pattern" },
+        r = { "<cmd>Telescope oldfiles<cr>", "Recent Files" },
+    },
+
     s = {
         name = "Search",
-        c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
         h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
-        M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
-        R = { "<cmd>Telescope registers<cr>", "Registers" },
+        m = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
+        r = { "<cmd>Telescope registers<cr>", "Registers" },
         k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
-        C = { "<cmd>Telescope commands<cr>", "Commands" },
+        c = { "<cmd>Telescope commands<cr>", "Commands" },
     },
 
     --ToggleTerm
@@ -169,7 +157,9 @@ local mappings = {
         h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
         v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
     },
+
 }
 
 which_key.setup(setup)
 which_key.register(mappings, opts)
+

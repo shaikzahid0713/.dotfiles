@@ -7,3 +7,5 @@ lsp.preset('recommended')
 lsp.nvim_workspace()
 
 lsp.setup()
+
+require("luasnip.loaders.from_snipmate").lazy_load({paths = "~/.config/nvim/snippets"})

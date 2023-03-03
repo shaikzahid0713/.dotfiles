@@ -36,7 +36,7 @@ def workspaces():
         separator(),
         widget.GroupBox(
             **base(fg='light'),
-            font='Cascadia Code',
+            font='Cascadia Code Bold',
             fontsize=19,
             margin_y=3,
             margin_x=0,
@@ -122,8 +122,8 @@ secondary_widgets = [
 ]
 
 widget_defaults = {
-    'font': 'Caskaydia Cove SemiBold',
+    'font': 'Cascadia Code',
     'fontsize': 14,
-    'padding': 1,
+    'padding': 5,
 }
 extension_defaults = widget_defaults.copy()

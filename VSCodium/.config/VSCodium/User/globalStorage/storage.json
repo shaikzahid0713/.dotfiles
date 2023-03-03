@@ -3,16 +3,12 @@
     "backupWorkspaces": {
         "workspaces": [
             {
-                "id": "e6cb794c30bf45c6ab74de3526389830",
-                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
+                "id": "609753ff9f4c9d8e098edf84a82e42f2",
+                "configURIPath": "file:///home/shaik/Documents/Code/Full-Stack-Open.code-workspace"
             }
         ],
         "folders": [],
-        "emptyWindows": [
-            {
-                "backupFolder": "1676179198647"
-            }
-        ]
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -61,6 +57,17 @@
                                     "id": "openRecentWorkspace",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/Code/Full-Stack-Open.code-workspace",
+                                        "path": "/home/shaik/Documents/Code/Full-Stack-Open.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Code/Full-Stack-Open (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/shaik/Documents/Code/DSA.code-workspace",
                                         "path": "/home/shaik/Documents/Code/DSA.code-workspace",
                                         "scheme": "file"
@@ -72,12 +79,45 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Software-Development/MySQL",
-                                        "path": "/home/shaik/Software-Development/MySQL",
+                                        "external": "file:///home/shaik/Documents/Full-Stack-Open",
+                                        "path": "/home/shaik/Documents/Full-Stack-Open",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Software-Development/MySQL"
+                                    "label": "~/Documents/Full-Stack-Open"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/Full-Stack-Open/Part-0",
+                                        "path": "/home/shaik/Documents/Full-Stack-Open/Part-0",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Full-Stack-Open/Part-0"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/Code/Web-Development.code-workspace",
+                                        "path": "/home/shaik/Documents/Code/Web-Development.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Code/Web-Development (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Programming/Web-Development",
+                                        "path": "/home/shaik/Programming/Web-Development",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Programming/Web-Development"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -94,12 +134,12 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Trash/python-project",
-                                        "path": "/home/shaik/Trash/python-project",
+                                        "external": "file:///home/shaik/Software-Development/MySQL",
+                                        "path": "/home/shaik/Software-Development/MySQL",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Trash/python-project"
+                                    "label": "~/Software-Development/MySQL"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -122,50 +162,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Neovim/nvim/.config/nvim"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/FrontEnd",
-                                        "path": "/home/shaik/Documents/FrontEnd",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/FrontEnd"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/CarFullStack-FrontEnd",
-                                        "path": "/home/shaik/Documents/CarFullStack-FrontEnd",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/CarFullStack-FrontEnd"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/React-Projects",
-                                        "path": "/home/shaik/Documents/React-Projects",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/React-Projects"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/Reference-Projects/Spring-Boot/spring-boot-tutorial",
-                                        "path": "/home/shaik/Documents/Reference-Projects/Spring-Boot/spring-boot-tutorial",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Reference-Projects/Spring-Boot/spring-boot-tutorial"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -325,7 +321,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -335,13 +332,6 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
-                                {
-                                    "id": "github.copyVscodeDevLinkFile",
-                                    "label": "Copy vscode.dev Link"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
@@ -688,7 +678,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Panel"
+                                    "label": "&&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -995,45 +986,54 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "Group &&3",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "Group &&4",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "Group &&5",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "&&Next Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "&&Previous Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "Group &&Left",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "Group &&Right",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "Group &&Above",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "Group &&Below",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -1233,8 +1233,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1468,12 +1467,12 @@
                 "userSettingsLabel": "ctrl+shift+h"
             },
             "editor.action.commentLine": {
-                "label": "Ctrl+Shift+/",
-                "userSettingsLabel": "ctrl+shift+/"
-            },
-            "editor.action.blockComment": {
                 "label": "Ctrl+/",
                 "userSettingsLabel": "ctrl+/"
+            },
+            "editor.action.blockComment": {
+                "label": "Ctrl+Shift+/",
+                "userSettingsLabel": "ctrl+shift+/"
             },
             "editor.emmet.action.expandAbbreviation": {
                 "label": "Tab",
@@ -1817,10 +1816,10 @@
     "windowsState": {
         "lastActiveWindow": {
             "workspaceIdentifier": {
-                "id": "e6cb794c30bf45c6ab74de3526389830",
-                "configURIPath": "file:///home/shaik/Documents/Code/DSA.code-workspace"
+                "id": "609753ff9f4c9d8e098edf84a82e42f2",
+                "configURIPath": "file:///home/shaik/Documents/Code/Full-Stack-Open.code-workspace"
             },
-            "backupPath": "/home/shaik/.config/VSCodium/Backups/e6cb794c30bf45c6ab74de3526389830",
+            "backupPath": "/home/shaik/.config/VSCodium/Backups/609753ff9f4c9d8e098edf84a82e42f2",
             "uiState": {
                 "mode": 1,
                 "x": 0,
@@ -1835,11 +1834,15 @@
     "profileAssociations": {
         "workspaces": {
             "file:///home/shaik/Software-Development/MySQL": "__default__profile__",
-            "file:///home/shaik/Documents/Code/DSA.code-workspace": "__default__profile__"
+            "file:///home/shaik/Documents/Python": "__default__profile__",
+            "file:///home/shaik/Programming/Web-Development": "__default__profile__",
+            "file:///home/shaik/Documents/Code/Web-Development.code-workspace": "__default__profile__",
+            "file:///home/shaik/Documents/Full-Stack-Open/Part-0": "__default__profile__",
+            "file:///home/shaik/Documents/Full-Stack-Open": "__default__profile__",
+            "file:///home/shaik/Documents/Code/DSA.code-workspace": "__default__profile__",
+            "file:///home/shaik/Documents/Code/Full-Stack-Open.code-workspace": "__default__profile__"
         },
-        "emptyWindows": {
-            "1676179198647": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true
 }
