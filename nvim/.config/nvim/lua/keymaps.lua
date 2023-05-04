@@ -56,6 +56,9 @@ else
     keymap("n", "df", "ggdG", opts)
     keymap("n", "yf", "ggyG", opts)
 
+    keymap("n", "z", "0", opts)
+    keymap("n", "m", "$", opts)
+    keymap("n", ";", "%", opts)
     -- visual --
     -- stay in indent mode
     keymap("v", "<", "<gv", opts)

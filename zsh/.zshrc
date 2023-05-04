@@ -14,7 +14,6 @@ export PATH="$HOME/.local/bin:$PATH"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="awesomepanda"
 
-
 # tre 
 tre() { command tre "$@" -e && source "/tmp/tre_aliases_$USER" 2>/dev/null; }
 
@@ -159,7 +158,7 @@ alias b="brillo"
 alias c="clear"
 alias e="exit"
 alias f="ranger" 
-alias l="exa -al"
+alias l="exa -la"
 alias n="nvim" 
 alias p="paru"
 alias pu="paru -Rnu"
@@ -181,7 +180,3 @@ alias linux="nvim ~/linux.sh"
 alias session="nvim -S ~/Programming-Grind/session.vim"
 
 # if [ -e /home/shaik/.nix-profile/etc/profile.d/nix.sh ]; then . /home/shaik/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
-
-# Youtube Downloading
-alias yt-dl="yt-dlp -f \"bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b\" -o '%(playlist_index|)s%(playlist_index& - |)s%(title)s.%(ext)s' BaW_jenozKc"

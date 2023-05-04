@@ -3,8 +3,8 @@
     "backupWorkspaces": {
         "workspaces": [
             {
-                "id": "609753ff9f4c9d8e098edf84a82e42f2",
-                "configURIPath": "file:///home/shaik/Documents/Code/Full-Stack-Open.code-workspace"
+                "id": "080ac58981ec7f0ea9356c2ef502dd60",
+                "configURIPath": "file:///home/shaik/Documents/Code/Java.code-workspace"
             }
         ],
         "folders": [],
@@ -48,10 +48,33 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/Code/Java.code-workspace",
+                                        "path": "/home/shaik/Documents/Code/Java.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Code/Java (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Youtube/MERN/Food-Delivery",
+                                        "path": "/home/shaik/Youtube/MERN/Food-Delivery",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Youtube/MERN/Food-Delivery"
                                 },
                                 {
                                     "id": "openRecentWorkspace",
@@ -79,6 +102,39 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/shaik/Software-Development/Java",
+                                        "path": "/home/shaik/Software-Development/Java",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Software-Development/Java"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Documents/Code/Web-Development.code-workspace",
+                                        "path": "/home/shaik/Documents/Code/Web-Development.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Code/Web-Development (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Git-Projects/Full-Stack-Open",
+                                        "path": "/home/shaik/Git-Projects/Full-Stack-Open",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Git-Projects/Full-Stack-Open"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/shaik/Documents/Full-Stack-Open",
                                         "path": "/home/shaik/Documents/Full-Stack-Open",
                                         "scheme": "file"
@@ -98,17 +154,6 @@
                                     "label": "~/Documents/Full-Stack-Open/Part-0"
                                 },
                                 {
-                                    "id": "openRecentWorkspace",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/Code/Web-Development.code-workspace",
-                                        "path": "/home/shaik/Documents/Code/Web-Development.code-workspace",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Code/Web-Development (Workspace)"
-                                },
-                                {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
@@ -120,51 +165,73 @@
                                     "label": "~/Programming/Web-Development"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/Python",
-                                        "path": "/home/shaik/Documents/Python",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Python"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Software-Development/MySQL",
-                                        "path": "/home/shaik/Software-Development/MySQL",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Software-Development/MySQL"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/.dotfiles/nvim/.config/nvim",
-                                        "path": "/home/shaik/.dotfiles/nvim/.config/nvim",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles/nvim/.config/nvim"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Neovim/nvim/.config/nvim",
-                                        "path": "/home/shaik/Neovim/nvim/.config/nvim",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Neovim/nvim/.config/nvim"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Downloads/music.sql",
+                                        "path": "/home/shaik/Downloads/music.sql",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/music.sql"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Youtube/MERN/Food-Delivery/Java-Class-Heirarchy",
+                                        "path": "/home/shaik/Youtube/MERN/Food-Delivery/Java-Class-Heirarchy",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Youtube/MERN/Food-Delivery/Java-Class-Heirarchy"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Youtube/MERN/Food-Delivery/java.ipynb",
+                                        "path": "/home/shaik/Youtube/MERN/Food-Delivery/java.ipynb",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Youtube/MERN/Food-Delivery/java.ipynb"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Desktop/Projects/Notebooks/Java/oop.ipynb",
+                                        "path": "/home/shaik/Desktop/Projects/Notebooks/Java/oop.ipynb",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Desktop/Projects/Notebooks/Java/oop.ipynb"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Desktop/kat-config.lua",
+                                        "path": "/home/shaik/Desktop/kat-config.lua",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Desktop/kat-config.lua"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/hosts",
+                                        "path": "/home/shaik/hosts",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/hosts"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -181,12 +248,12 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Downloads/music.sql",
-                                        "path": "/home/shaik/Downloads/music.sql",
+                                        "external": "file:///home/shaik/Youtube/MERN/Food-Delivery/utube.ipynb",
+                                        "path": "/home/shaik/Youtube/MERN/Food-Delivery/utube.ipynb",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Downloads/music.sql"
+                                    "label": "~/Youtube/MERN/Food-Delivery/utube.ipynb"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -209,72 +276,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Medium-Blog/Nvim-Blog-Reference/nvim/init.vim"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/hosts",
-                                        "path": "/home/shaik/hosts",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/hosts"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/arch-apps.sh",
-                                        "path": "/home/shaik/Desktop/arch-apps.sh",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/arch-apps.sh"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/dotfiles/.config/ranger/rc.conf",
-                                        "path": "/home/shaik/Desktop/dotfiles/.config/ranger/rc.conf",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/dotfiles/.config/ranger/rc.conf"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/kat-config.lua",
-                                        "path": "/home/shaik/Desktop/kat-config.lua",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/kat-config.lua"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Downloads/Temp/Raghu%20Sir%20Spring%20Boot/Latest%20Notes/Jan/jan%202/SpringBoot7AM_02012021.txt",
-                                        "path": "/home/shaik/Downloads/Temp/Raghu Sir Spring Boot/Latest Notes/Jan/jan 2/SpringBoot7AM_02012021.txt",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Downloads/Temp/Raghu Sir Spring Boot/Latest Notes/Jan/jan 2/SpringBoot7AM_02012021.txt"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/VsCode/.ssh/known_hosts",
-                                        "path": "/home/shaik/Desktop/VsCode/.ssh/known_hosts",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/VsCode/.ssh/known_hosts"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -444,10 +445,6 @@
                                 {
                                     "id": "settings.filterByOnline",
                                     "label": "&&Online Services Settings"
-                                },
-                                {
-                                    "id": "settings.filterByTelemetry",
-                                    "label": "Telemetry Settings"
                                 }
                             ]
                         }
@@ -678,8 +675,7 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Panel",
-                                    "checked": true
+                                    "label": "&&Panel"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -799,13 +795,6 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "workbench.action.splitEditorInGroup",
-                                    "label": "Split in &&Group"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.action.editorLayoutSingle",
                                     "label": "&&Single"
                                 },
@@ -869,6 +858,10 @@
                     {
                         "id": "workbench.view.extensions",
                         "label": "E&&xtensions"
+                    },
+                    {
+                        "id": "workbench.view.extension.test",
+                        "label": "T&&esting"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1233,7 +1226,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1564,10 +1558,10 @@
                 "isNative": false,
                 "userSettingsLabel": "ctrl+numpad0"
             },
-            "workbench.action.splitEditorInGroup": {
-                "label": "Ctrl+K Ctrl+Shift+\\",
+            "workbench.action.splitEditorUp": {
+                "label": "Ctrl+K Ctrl+\\",
                 "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
+                "userSettingsLabel": "ctrl+k ctrl+\\"
             },
             "workbench.action.toggleEditorGroupLayout": {
                 "label": "Shift+Alt+0",
@@ -1578,8 +1572,9 @@
                 "userSettingsLabel": "ctrl+shift+f"
             },
             "workbench.view.scm": {
-                "label": "Ctrl+Shift+G",
-                "userSettingsLabel": "ctrl+shift+g"
+                "label": "Ctrl+Shift+G G",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+shift+g g"
             },
             "workbench.view.debug": {
                 "label": "Ctrl+Shift+D",
@@ -1781,27 +1776,23 @@
                 "label": "Ctrl+K Ctrl+R",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+r"
-            },
-            "workbench.action.toggleDevTools": {
-                "label": "Ctrl+Shift+I",
-                "userSettingsLabel": "ctrl+shift+i"
             }
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#0e0e0e",
+    "themeBackground": "#0e131b",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#d5d8da",
-            "background": "#0e0e0e",
-            "editorBackground": "#0e0e0e",
-            "titleBarBackground": "#0e0e0e",
-            "activityBarBackground": "#080808",
-            "sideBarBackground": "#0e0e0e",
-            "statusBarBackground": "#0e0e0e",
-            "statusBarNoFolderBackground": "#1c1e26"
+            "foreground": "#cccccc",
+            "background": "#0e131b",
+            "editorBackground": "#0e131b",
+            "titleBarBackground": "#0e131b",
+            "activityBarBackground": "#0e131b",
+            "sideBarBackground": "#0e131b",
+            "statusBarBackground": "#111722",
+            "statusBarNoFolderBackground": "#0e131b"
         },
         "layoutInfo": {
             "sideBarSide": "left",
@@ -1816,16 +1807,16 @@
     "windowsState": {
         "lastActiveWindow": {
             "workspaceIdentifier": {
-                "id": "609753ff9f4c9d8e098edf84a82e42f2",
-                "configURIPath": "file:///home/shaik/Documents/Code/Full-Stack-Open.code-workspace"
+                "id": "080ac58981ec7f0ea9356c2ef502dd60",
+                "configURIPath": "file:///home/shaik/Documents/Code/Java.code-workspace"
             },
-            "backupPath": "/home/shaik/.config/VSCodium/Backups/609753ff9f4c9d8e098edf84a82e42f2",
+            "backupPath": "/home/shaik/.config/VSCodium/Backups/080ac58981ec7f0ea9356c2ef502dd60",
             "uiState": {
                 "mode": 1,
-                "x": 0,
-                "y": 24,
-                "width": 1920,
-                "height": 1056
+                "x": 965,
+                "y": 29,
+                "width": 950,
+                "height": 1046
             }
         },
         "openedWindows": []
@@ -1836,11 +1827,15 @@
             "file:///home/shaik/Software-Development/MySQL": "__default__profile__",
             "file:///home/shaik/Documents/Python": "__default__profile__",
             "file:///home/shaik/Programming/Web-Development": "__default__profile__",
-            "file:///home/shaik/Documents/Code/Web-Development.code-workspace": "__default__profile__",
             "file:///home/shaik/Documents/Full-Stack-Open/Part-0": "__default__profile__",
             "file:///home/shaik/Documents/Full-Stack-Open": "__default__profile__",
+            "file:///home/shaik/Git-Projects/Full-Stack-Open": "__default__profile__",
+            "file:///home/shaik/Documents/Code/Web-Development.code-workspace": "__default__profile__",
+            "file:///home/shaik/Software-Development/Java": "__default__profile__",
             "file:///home/shaik/Documents/Code/DSA.code-workspace": "__default__profile__",
-            "file:///home/shaik/Documents/Code/Full-Stack-Open.code-workspace": "__default__profile__"
+            "file:///home/shaik/Documents/Code/Full-Stack-Open.code-workspace": "__default__profile__",
+            "file:///home/shaik/Youtube/MERN/Food-Delivery": "__default__profile__",
+            "file:///home/shaik/Documents/Code/Java.code-workspace": "__default__profile__"
         },
         "emptyWindows": {}
     },

@@ -1,6 +1,6 @@
 local configs = require("nvim-treesitter.configs")
 configs.setup {
-  ensure_installed = {"cpp", "python", "lua", "java", "javascript", },
+  ensure_installed = { "cpp", "python", "lua", "java", "javascript", },
   sync_install = false,
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {
@@ -10,6 +10,19 @@ configs.setup {
 
   },
   indent = { enable = true, disable = { "yaml" } },
+  autotag = {
+        enable = true,
+        filetypes = {
+            "html",
+            "javascript",
+            "javascriptreact",
+            "svelte",
+            "typescript",
+            "typescriptreact",
+            "vue",
+            "xml",
+        }
+    },
   rainbow = {
     enable = true,
     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for

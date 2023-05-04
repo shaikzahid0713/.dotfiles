@@ -41,10 +41,7 @@ nnoremap ; %
 
 nnoremap df ggdG
 nnoremap yf ggyG
-
-" nnoremap <tab> :call VSCodeNotify('workbench.action.nextEditor')<CR>
-" nnoremap <S-tab> :call VSCodeNotify('workbench.action.previousEditor')<CR>
-
+vnoremap y "+y
 
 nnoremap <silent> <C-w>s :call <SID>split('h')<CR>
 xnoremap <silent> <C-w>s :call <SID>split('h')<CR>
@@ -65,8 +62,9 @@ nnoremap <silent> <C-w>+ :<C-u>call <SID>manageEditorSize(v:count, 'increase')<C
 xnoremap <silent> <C-w>+ :<C-u>call <SID>manageEditorSize(v:count, 'increase')<CR>
 nnoremap <silent> <C-w>< :<C-u>call <SID>manageEditorSize(v:count, 'decrease')<CR>
 xnoremap <silent> <C-w>< :<C-u>call <SID>manageEditorSize(v:count, 'decrease')<CR>
-nnoremap <silent> <C-w>- :<C-u>call <SID>manageEditorSize(v:count, 'decrease')<CR>
+
 xnoremap <silent> <C-w>- :<C-u>call <SID>manageEditorSize(v:count, 'decrease')<CR>
+nnoremap <silent> <C-w>- :<C-u>call <SID>manageEditorSize(v:count, 'decrease')<CR>
 
 " Better Navigation
 nnoremap <silent> <C-j> :call VSCodeNotify('workbench.action.navigateDown')<CR>

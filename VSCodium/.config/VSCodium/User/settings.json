@@ -873,10 +873,37 @@
         "comments": "on",
         "strings": "on"
     },
-    "workbench.colorTheme": "Dark Horizon",
     "editor.stickyScroll.enabled": true,
     "hediet.vscode-drawio.resizeImages": null,
     "clangd.path": "/home/shaik/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
     "jupyter.disableJupyterAutoStart": true,
+    "python.defaultInterpreterPath": "/home/shaik/Programming/Python-Environments/Obselete",
+    "nebulaOni.update.restoreConfiguration": {
+        "themeSettings": {
+            "background": "Grey",
+            "main": "Bumblebee",
+            "highlight": "Ultra Violet",
+            "focusBorder": "ON",
+            "fontStyle": "Italic",
+            "comments": "Dark Violet",
+            "favorite": "OFF"
+        },
+        "favoriteSettings": {
+            "background": "Glacial Blue",
+            "main": "Sakura",
+            "highlight": "Ultra Violet",
+            "focusBorder": "ON",
+            "fontStyle": "Italic",
+            "comments": "Dark Magenta",
+            "favorite": "Nebula Oni (Pegasus)"
+        }
+    },
+    "workbench.colorTheme": "After Dark No Italics",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "redhat.telemetry.enabled": false,
+    "notebook.output.textLineLimit": 50,
     "workbench.activityBar.visible": false,
 }
