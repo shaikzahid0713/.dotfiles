@@ -178,5 +178,7 @@ alias idea="nvim ~/.ideavimrc"
 alias sts="nvim ~/.vrapperrc"
 alias linux="nvim ~/linux.sh"
 alias session="nvim -S ~/Programming-Grind/session.vim"
+alias files="joshuto"
+alias clean="sudo pacman -Rsn $(pacman -Qtdq)"
 
 # if [ -e /home/shaik/.nix-profile/etc/profile.d/nix.sh ]; then . /home/shaik/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

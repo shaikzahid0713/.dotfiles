@@ -1,13 +1,12 @@
 {
     "telemetry.machineId": "b1b3071e801b57296dac78e7232375f6eec4c2ad6cef1d7feb5d4e64488e65ea",
     "backupWorkspaces": {
-        "workspaces": [
+        "workspaces": [],
+        "folders": [
             {
-                "id": "080ac58981ec7f0ea9356c2ef502dd60",
-                "configURIPath": "file:///home/shaik/Documents/Code/Java.code-workspace"
+                "folderUri": "file:///home/shaik/Software-Development/MySQL"
             }
         ],
-        "folders": [],
         "emptyWindows": []
     },
     "lastKnownMenubarData": {
@@ -55,6 +54,28 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Software-Development/MySQL",
+                                        "path": "/home/shaik/Software-Development/MySQL",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Software-Development/MySQL"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Java-Projects/hibernate_learning",
+                                        "path": "/home/shaik/Java-Projects/hibernate_learning",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Java-Projects/hibernate_learning"
+                                },
+                                {
                                     "id": "openRecentWorkspace",
                                     "uri": {
                                         "$mid": 1,
@@ -66,103 +87,81 @@
                                     "label": "~/Documents/Code/Java (Workspace)"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Youtube/MERN/Food-Delivery",
-                                        "path": "/home/shaik/Youtube/MERN/Food-Delivery",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Youtube/MERN/Food-Delivery"
-                                },
-                                {
                                     "id": "openRecentWorkspace",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/Code/Full-Stack-Open.code-workspace",
-                                        "path": "/home/shaik/Documents/Code/Full-Stack-Open.code-workspace",
+                                        "external": "file:///home/shaik/Documents/Code/Java-Projects.code-workspace",
+                                        "path": "/home/shaik/Documents/Code/Java-Projects.code-workspace",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Code/Full-Stack-Open (Workspace)"
-                                },
-                                {
-                                    "id": "openRecentWorkspace",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/Code/DSA.code-workspace",
-                                        "path": "/home/shaik/Documents/Code/DSA.code-workspace",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Code/DSA (Workspace)"
+                                    "label": "~/Documents/Code/Java-Projects (Workspace)"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Software-Development/Java",
-                                        "path": "/home/shaik/Software-Development/Java",
+                                        "external": "file:///home/shaik/Git-Projects/DevRel-Examples-External/ai-text-shortener-app",
+                                        "path": "/home/shaik/Git-Projects/DevRel-Examples-External/ai-text-shortener-app",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Software-Development/Java"
-                                },
-                                {
-                                    "id": "openRecentWorkspace",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/Code/Web-Development.code-workspace",
-                                        "path": "/home/shaik/Documents/Code/Web-Development.code-workspace",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/Code/Web-Development (Workspace)"
+                                    "label": "~/Git-Projects/DevRel-Examples-External/ai-text-shortener-app"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Git-Projects/Full-Stack-Open",
-                                        "path": "/home/shaik/Git-Projects/Full-Stack-Open",
+                                        "external": "file:///home/shaik/Python/EDA/Titanic",
+                                        "path": "/home/shaik/Python/EDA/Titanic",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Git-Projects/Full-Stack-Open"
+                                    "label": "~/Python/EDA/Titanic"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/Full-Stack-Open",
-                                        "path": "/home/shaik/Documents/Full-Stack-Open",
+                                        "external": "file:///home/shaik/Python/EDA/Titanic-Dataset",
+                                        "path": "/home/shaik/Python/EDA/Titanic-Dataset",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Full-Stack-Open"
+                                    "label": "~/Python/EDA/Titanic-Dataset"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Documents/Full-Stack-Open/Part-0",
-                                        "path": "/home/shaik/Documents/Full-Stack-Open/Part-0",
+                                        "external": "file:///home/shaik/OSS/EmployeeManagementSystem",
+                                        "path": "/home/shaik/OSS/EmployeeManagementSystem",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Full-Stack-Open/Part-0"
+                                    "label": "~/OSS/EmployeeManagementSystem"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Programming/Web-Development",
-                                        "path": "/home/shaik/Programming/Web-Development",
+                                        "external": "file:///home/shaik/open-source-contribution-for-beginners",
+                                        "path": "/home/shaik/open-source-contribution-for-beginners",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Programming/Web-Development"
+                                    "label": "~/open-source-contribution-for-beginners"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik",
+                                        "path": "/home/shaik",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/shaik"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -171,23 +170,100 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Downloads/music.sql",
-                                        "path": "/home/shaik/Downloads/music.sql",
+                                        "external": "file:///home/shaik/Trash/hibernate-configuration-3.0.dtd",
+                                        "path": "/home/shaik/Trash/hibernate-configuration-3.0.dtd",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Downloads/music.sql"
+                                    "label": "~/Trash/hibernate-configuration-3.0.dtd"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/shaik/Youtube/MERN/Food-Delivery/Java-Class-Heirarchy",
-                                        "path": "/home/shaik/Youtube/MERN/Food-Delivery/Java-Class-Heirarchy",
+                                        "external": "file:///home/shaik/Trash/mysql_store_erd.mwb",
+                                        "path": "/home/shaik/Trash/mysql_store_erd.mwb",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Youtube/MERN/Food-Delivery/Java-Class-Heirarchy"
+                                    "label": "~/Trash/mysql_store_erd.mwb"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Trash/BikeStores%20Sample%20Database%20-%20load%20data.sql",
+                                        "path": "/home/shaik/Trash/BikeStores Sample Database - load data.sql",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Trash/BikeStores Sample Database - load data.sql"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Trash/BikeStores%20Sample%20Database%20-%20drop%20all%20objects.sql",
+                                        "path": "/home/shaik/Trash/BikeStores Sample Database - drop all objects.sql",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Trash/BikeStores Sample Database - drop all objects.sql"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Trash/BikeStores%20Sample%20Database%20-%20create%20objects.sql",
+                                        "path": "/home/shaik/Trash/BikeStores Sample Database - create objects.sql",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Trash/BikeStores Sample Database - create objects.sql"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Trash/books_data/users.csv",
+                                        "path": "/home/shaik/Trash/books_data/users.csv",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Trash/books_data/users.csv"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Trash/books_data/ratings.csv",
+                                        "path": "/home/shaik/Trash/books_data/ratings.csv",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Trash/books_data/ratings.csv"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Trash/books_data/books.csv",
+                                        "path": "/home/shaik/Trash/books_data/books.csv",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Trash/books_data/books.csv"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/shaik/Youtube/MERN/Food-Delivery/demo.ipynb",
+                                        "path": "/home/shaik/Youtube/MERN/Food-Delivery/demo.ipynb",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Youtube/MERN/Food-Delivery/demo.ipynb"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -199,83 +275,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Youtube/MERN/Food-Delivery/java.ipynb"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/Projects/Notebooks/Java/oop.ipynb",
-                                        "path": "/home/shaik/Desktop/Projects/Notebooks/Java/oop.ipynb",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/Projects/Notebooks/Java/oop.ipynb"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Desktop/kat-config.lua",
-                                        "path": "/home/shaik/Desktop/kat-config.lua",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Desktop/kat-config.lua"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/hosts",
-                                        "path": "/home/shaik/hosts",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/hosts"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Software-Development/MySQL/employee.sql",
-                                        "path": "/home/shaik/Software-Development/MySQL/employee.sql",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Software-Development/MySQL/employee.sql"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Youtube/MERN/Food-Delivery/utube.ipynb",
-                                        "path": "/home/shaik/Youtube/MERN/Food-Delivery/utube.ipynb",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Youtube/MERN/Food-Delivery/utube.ipynb"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/tre",
-                                        "path": "/home/shaik/tre",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/tre"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/shaik/Medium-Blog/Nvim-Blog-Reference/nvim/init.vim",
-                                        "path": "/home/shaik/Medium-Blog/Nvim-Blog-Reference/nvim/init.vim",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Medium-Blog/Nvim-Blog-Reference/nvim/init.vim"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -368,6 +367,18 @@
                                                 "checked": true
                                             },
                                             {
+                                                "id": "workbench.profiles.actions.profileEntry.-5da9fd87",
+                                                "label": "Java-Development"
+                                            },
+                                            {
+                                                "id": "workbench.profiles.actions.profileEntry.-4f0939c5",
+                                                "label": "Spring-Boot"
+                                            },
+                                            {
+                                                "id": "workbench.profiles.actions.profileEntry.-6e47481e",
+                                                "label": "Web-Development"
+                                            },
+                                            {
                                                 "id": "vscode.menubar.separator"
                                             },
                                             {
@@ -383,8 +394,7 @@
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.deleteProfile",
-                                                "label": "Delete Profile...",
-                                                "enabled": false
+                                                "label": "Delete Profile..."
                                             },
                                             {
                                                 "id": "vscode.menubar.separator"
@@ -462,7 +472,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Workspace"
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -658,7 +668,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -671,7 +682,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleActivityBarVisibility",
-                                    "label": "&&Activity Bar"
+                                    "label": "&&Activity Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
@@ -860,10 +872,6 @@
                         "label": "E&&xtensions"
                     },
                     {
-                        "id": "workbench.view.extension.test",
-                        "label": "T&&esting"
-                    },
-                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -888,7 +896,7 @@
                     {
                         "id": "editor.action.toggleWordWrap",
                         "label": "&&Word Wrap",
-                        "checked": true
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.toggleStickyScroll",
@@ -910,7 +918,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1798,25 +1807,22 @@
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
-            "activityBarWidth": 0,
-            "sideBarWidth": 0,
+            "activityBarWidth": 48,
+            "sideBarWidth": 328,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "workspaceIdentifier": {
-                "id": "080ac58981ec7f0ea9356c2ef502dd60",
-                "configURIPath": "file:///home/shaik/Documents/Code/Java.code-workspace"
-            },
-            "backupPath": "/home/shaik/.config/VSCodium/Backups/080ac58981ec7f0ea9356c2ef502dd60",
+            "folder": "file:///home/shaik/Software-Development/MySQL",
+            "backupPath": "/home/shaik/.config/VSCodium/Backups/04ab4c520315e0fe3b71d4832b1c5b3f",
             "uiState": {
                 "mode": 1,
-                "x": 965,
-                "y": 29,
-                "width": 950,
-                "height": 1046
+                "x": 0,
+                "y": 24,
+                "width": 1920,
+                "height": 1056
             }
         },
         "openedWindows": []
@@ -1824,7 +1830,6 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/shaik/Software-Development/MySQL": "__default__profile__",
             "file:///home/shaik/Documents/Python": "__default__profile__",
             "file:///home/shaik/Programming/Web-Development": "__default__profile__",
             "file:///home/shaik/Documents/Full-Stack-Open/Part-0": "__default__profile__",
@@ -1835,9 +1840,44 @@
             "file:///home/shaik/Documents/Code/DSA.code-workspace": "__default__profile__",
             "file:///home/shaik/Documents/Code/Full-Stack-Open.code-workspace": "__default__profile__",
             "file:///home/shaik/Youtube/MERN/Food-Delivery": "__default__profile__",
-            "file:///home/shaik/Documents/Code/Java.code-workspace": "__default__profile__"
+            "file:///home/shaik/Trash": "__default__profile__",
+            "file:///home/shaik/Projects/Java/JDBC/JDBC_Maven/first_jdbc": "__default__profile__",
+            "file:///home/shaik/Projects/Java/JDBC/First_JDBC": "__default__profile__",
+            "file:///home/shaik/Java-Projects": "__default__profile__",
+            "file:///home/shaik/Trash/Library-Management-System-JAVA": "__default__profile__",
+            "file:///home/shaik/Java-Projects/login_portal": "__default__profile__",
+            "file:///home/shaik/Java-Projects/banking-system": "__default__profile__",
+            "file:///home/shaik/Java-Projects/Library-Management-System-JDBC/lms": "__default__profile__",
+            "file:///home/shaik/Trash/Codium": "__default__profile__",
+            "file:///home/shaik/Software-Development/Web-Development": "-6e47481e",
+            "file:///home/shaik/Software-Development/Web-Development/Udemy": "__default__profile__",
+            "file:///home/shaik/Java-Projects/bms": "__default__profile__",
+            "file:///home/shaik": "__default__profile__",
+            "file:///home/shaik/open-source-contribution-for-beginners": "__default__profile__",
+            "file:///home/shaik/OSS/EmployeeManagementSystem": "__default__profile__",
+            "file:///home/shaik/Python/EDA/Titanic-Dataset": "__default__profile__",
+            "file:///home/shaik/Python/EDA/Titanic": "__default__profile__",
+            "file:///home/shaik/Git-Projects/DevRel-Examples-External/ai-text-shortener-app": "__default__profile__",
+            "file:///home/shaik/Documents/Code/Java-Projects.code-workspace": "__default__profile__",
+            "file:///home/shaik/Documents/Code/Java.code-workspace": "__default__profile__",
+            "file:///home/shaik/Java-Projects/hibernate_learning": "__default__profile__",
+            "file:///home/shaik/Software-Development/MySQL": "__default__profile__"
         },
         "emptyWindows": {}
     },
-    "profileAssociationsMigration": true
+    "profileAssociationsMigration": true,
+    "userDataProfiles": [
+        {
+            "location": "-4f0939c5",
+            "name": "Spring-Boot"
+        },
+        {
+            "location": "-5da9fd87",
+            "name": "Java-Development"
+        },
+        {
+            "location": "-6e47481e",
+            "name": "Web-Development"
+        }
+    ]
 }

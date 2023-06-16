@@ -38,8 +38,8 @@ inoremap z,  <c-o>
 inoremap z,p <c-r>"
 inoremap <c-backspace> <Esc>dbxi
 
-nnoremap da ggdG
-nnoremap ya ggyG
+nnoremap dda ggdG
+nnoremap yya ggyG
 nnoremap ym  y$
 nnoremap yz  y0
 nnoremap <tab> :tabnext<cr>
