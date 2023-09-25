@@ -33,11 +33,7 @@ return {
         end
     },
 
-    -- Easymotion (VScode)
-    {
-        "ChristianChiarulli/vscode-easymotion",
-    },
-
+    --
     -- Git Integration
     {
         "lewis6991/gitsigns.nvim",

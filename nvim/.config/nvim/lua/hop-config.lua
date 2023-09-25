@@ -1,4 +1,7 @@
-require'hop'.setup { keys = 'etovxqpdygfblzhckisuran', term_seq_bias = 0.5 }
+local hop = require'hop'
+hop.setup { keys = "etovxqpdygfblzhckisuran" }
 
-vim.api.nvim_set_keymap('', 'f', "<cmd>lua require'hop'.hint_char1()<cr>", {})
-vim.api.nvim_set_keymap('n', 't', "<cmd>HopPattern<CR>", {noremap = true})
+-- assign hop word highlight to the letter f in all vim modes
+vim.keymap.set('', 'f', function()
+  hop.hint_char1()
+end, { remap=true })
