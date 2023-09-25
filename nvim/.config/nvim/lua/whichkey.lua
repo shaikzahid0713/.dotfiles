@@ -81,7 +81,7 @@ local opts = {
 local mappings = {
 
     ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-    ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" }, -- File Explorer
+    ["e"] = { "<cmd>Neotree toggle<cr>", "Explorer" }, -- File Explorer
     ["k"] = { "<cmd>bdelete<CR>", "Kill Buffer" },  -- Close current file
     ["m"] = { "<cmd>Mason<CR>", "Mason" },  -- Mason UI for LSP Management
     ["p"] = { "<cmd>Lazy<CR>", "Plugin Manager" }, -- Invoking plugin manager

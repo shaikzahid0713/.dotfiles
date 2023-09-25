@@ -94,15 +94,16 @@ return {
     },
 
 
-    -- Nvim-tree (File Explorer)
+    -- Nvim-Neo-tree (File Explorer)
     {
-        'nvim-tree/nvim-tree.lua',
-        lazy = true,
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
         dependencies = {
-            'nvim-tree/nvim-web-devicons',
-        },
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+        }
     },
-
 
     -- Nvim-Surround (Manipulating Surroundings)
     {
