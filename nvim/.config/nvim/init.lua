@@ -12,7 +12,6 @@ else
     require "alpha-config"
     require "autopairs-config"
     require "bufferline-config"
-    require "git-config"
     require "indentline-config"
     require "lualine-config"
     require "lsp-config"

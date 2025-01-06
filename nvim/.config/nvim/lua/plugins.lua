@@ -33,12 +33,6 @@ return {
         end
     },
 
-    --
-    -- Git Integration
-    {
-        "lewis6991/gitsigns.nvim",
-    },
-
     -- Hop (Better Navigation)
     {
         "phaazon/hop.nvim",
@@ -48,9 +42,11 @@ return {
     -- Indentation Highlighting
     {
         "lukas-reineke/indent-blankline.nvim",
+        main = "ibl", 
+        opts = {}
     },
 
-    -- Rainbow Highlighting
+    -- Rainbow Highlightingmain = "ibl",
     {
         "HiPhish/nvim-ts-rainbow2"
     },
