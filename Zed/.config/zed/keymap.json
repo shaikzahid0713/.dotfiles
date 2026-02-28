@@ -1,0 +1,87 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && !menu",
+    "bindings": {
+      "ctrl-c": "editor::Copy", // vim default: return to normal mode
+      "ctrl-x": "editor::Cut", // vim default: decrement
+      "ctrl-v": "editor::Paste", // vim default: visual block mode
+      "ctrl-y": "editor::Undo", // vim default: line up
+      "ctrl-f": "buffer_search::Deploy", // vim default: page down
+      "ctrl-o": "workspace::Open", // vim default: go back
+      "ctrl-s": "workspace::Save", // vim default: show signature
+      "ctrl-a": "editor::SelectAll", // vim default: increment
+      "ctrl-b": "workspace::ToggleLeftDock", // vim default: down
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-h": "editor::MoveLeft",
+      "alt-l": "editor::MoveRight",
+      "alt-j": "editor::MoveDown",
+      "alt-k": "editor::MoveUp",
+    },
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-p": "file_finder::Toggle",
+    },
+  },
+  // --- Added from VSCode conversion ---
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      ",": "editor::MoveToEndOfLine",
+      "z": "editor::MoveToBeginningOfLine",
+      "space t": "workspace::ToggleBottomDock",
+      "ctrl-s": "workspace::Save",
+      "ctrl-v": "editor::Paste",
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePreviousItem",
+      "y f": ["workspace::SendKeystrokes", "ctrl+a ctrl+c"],
+      // --- Merged from VSCode conversioin ---
+      "space ;": "command_palette::Toggle",
+      "space k": "pane::CloseActiveItem",
+      "space q": "terminal_panel::Toggle",
+      "space e": "project_panel::ToggleFocus",
+      "space f": "editor::Format",
+      // "space m": "markdown::Preview",
+      "space h": "pane::SplitDown",
+      "space v": "pane::SplitRight",
+      "space s": "file_finder::Toggle",
+      // "space z": "workspace::ToggleZenMode",
+      "ctrl-m": "markdown::OpenPreview",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      ">": "editor::Indent",
+      "<": "editor::Outdent",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+      "ctrl-s": "workspace::Save",
+      "ctrl-v": "editor::Paste",
+      "ctrl-enter": "editor::Newline",
+      "ctrl-shift-enter": "editor::NewlineAbove",
+    },
+  },
+]

@@ -1,0 +1,27 @@
+{
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "v",
+        description: Some("Clipboard"),
+    ): Spawn("ringboard-egui"),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "Escape",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "p",
+    ): Spawn("bw-autofill"),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "l",
+    ): System(LockScreen),
+}

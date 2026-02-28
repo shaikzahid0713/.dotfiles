@@ -1,0 +1,85 @@
+/* ============================================================
+   Bitwarden Vault Picker — Dark Table Theme
+   Place: ~/.config/wofi/bitwarden.css
+   ============================================================ */
+
+* {
+    font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", "Noto Mono", monospace;
+    font-size: 13px;
+    transition: all 80ms ease;
+}
+
+window {
+    background-color: rgba(10, 11, 20, 0.96);
+    border: 1px solid rgba(109, 120, 255, 0.45);
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* Search input */
+#input {
+    all: unset;
+    background-color: rgba(22, 24, 40, 0.98);
+    color: #e2e4ff;
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin: 12px 12px 6px 12px;
+    font-size: 14px;
+    caret-color: #818cf8;
+}
+
+#input:focus {
+    border-color: rgba(129, 140, 248, 0.75);
+    background-color: rgba(28, 30, 50, 0.98);
+}
+
+/* Scrollable area */
+#scroll {
+    margin: 4px 8px 10px 8px;
+    border: none;
+}
+
+#inner-box {
+    background: transparent;
+}
+
+#outer-box {
+    padding: 2px;
+}
+
+/* ── Row (each vault entry) ──────────────────────────────── */
+#entry {
+    padding: 6px 14px;
+    border-left: 3px solid transparent;
+    border-radius: 7px;
+    color: #9fa8da;
+    margin: 1px 2px;
+}
+
+#entry:hover {
+    background-color: rgba(99, 102, 241, 0.1);
+    color: #c5cae9;
+    border-left-color: rgba(99, 102, 241, 0.3);
+}
+
+#entry:selected {
+    background-color: rgba(99, 102, 241, 0.25);
+    color: #ffffff;
+    border-left: 3px solid #818cf8;
+    padding-left: 11px;
+}
+
+/* Text inside each row */
+#text {
+    color: inherit;
+    font-family: "JetBrains Mono", "Fira Code", "Noto Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0px;
+}
+
+/* ── Header / separator row ──────────────────────────────── */
+/* Entries that start with "──" are visual separators */
+#entry #text {
+    white-space: pre;   /* preserve spaces for column alignment */
+}

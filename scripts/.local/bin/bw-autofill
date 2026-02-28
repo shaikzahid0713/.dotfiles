@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+# Bitwarden Wayland autofill v4
+# 2-column table (Name | Username) - single-action paste
+# Requires: rbw, wofi, wtype, wl-clipboard
+
+CSS="$HOME/.config/wofi/bitwarden.css"
+
+# 1. Unlock vault
+rbw unlock 2>/dev/null
+
+# 2. Fetch all entries: name TAB user
+# valid rbw list fields: id, name, user, folder, type
+ALL=$(rbw list --fields name,user 2>/dev/null)
+
+if [ -z "$ALL" ]; then
+    notify-send -t 4000 "Bitwarden" "Vault empty or not synced. Run: rbw sync"
+    exit 1
+fi
+
+# 3. Format as aligned 2-column table: Name (30) | Username
+DISPLAY=$(echo "$ALL" | awk -F'\t' '{
+    name = $1; user = $2
+    if (length(name) > 30) name = substr(name, 1, 29) "..."
+    if (length(user) > 36) user = substr(user, 1, 35) "..."
+    printf "%-30s  |  %s\n", name, user
+}')
+
+HEADER=$(printf "%-30s  |  %s" "  Name" "  Username")
+SEP="----------------------------------------------------------------------"
+MENU=$(printf "%s\n%s\n%s" "$HEADER" "$SEP" "$DISPLAY")
+
+# 4. Show picker
+SEL=$(echo "$MENU" | wofi \
+    --dmenu \
+    --prompt "Vault" \
+    --lines 14 \
+    --width 640 \
+    --style "$CSS" \
+    --no-actions)
+
+[ -z "$SEL" ] && exit 0
+
+# Reject header or separator lines
+[[ "$SEL" == *"Username"* ]] && exit 0
+[[ "$SEL" == *"------"* ]] && exit 0
+
+# 5. Resolve credentials
+LINE_NUM=$(echo "$DISPLAY" | grep -nF "$SEL" | head -1 | cut -d: -f1)
+[ -z "$LINE_NUM" ] && exit 0
+
+LINE=$(echo "$ALL" | sed -n "${LINE_NUM}p")
+NAME=$(echo "$LINE" | awk -F'\t' '{print $1}')
+USER=$(echo "$LINE" | awk -F'\t' '{print $2}')
+PASS=$(rbw get "$NAME" --user "$USER" 2>/dev/null || rbw get "$NAME" 2>/dev/null)
+
+if [ -z "$PASS" ]; then
+    notify-send -t 4000 "Bitwarden" "Could not fetch password for: $NAME"
+    exit 1
+fi
+
+# 6. Paste: username -> Tab -> password (no second popup)
+# Clipboard-based -- atomic paste, zero dropped chars on any Wayland app
+echo -n "$USER" | wl-copy
+sleep 0.3
+wtype -M ctrl -k v -m ctrl
+sleep 0.3
+wtype -k Tab
+sleep 0.3
+echo -n "$PASS" | wl-copy
+sleep 0.2
+wtype -M ctrl -k v -m ctrl
+
+# Auto-clear clipboard after 30 seconds
+(sleep 30 && wl-copy --clear) &

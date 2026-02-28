@@ -1,0 +1,77 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "languages": {
+    "Markdown": {
+      "format_on_save": "on",
+      "remove_trailing_whitespace_on_save": true,
+      "indent_guides": {
+        "background_coloring": "indent_aware",
+      },
+    },
+  },
+  "soft_wrap": "editor_width",
+  "cursor_blink": true,
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "ui_font_weight": 400.0,
+  "buffer_font_family": ".ZedMono",
+  "agent": {
+    "play_sound_when_agent_done": true,
+    "inline_assistant_model": {
+      "provider": "google",
+      "model": "gemini-3.1-pro-preview",
+    },
+    "default_profile": "ask",
+    "default_model": {
+      "enable_thinking": true,
+      "provider": "google",
+      "model": "gemini-2.5-pro",
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "vim_mode": true,
+  "relative_line_numbers": "enabled",
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "base_keymap": "VSCode",
+  "ui_font_size": 14.0,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Bearded Theme Black Amethyst",
+  },
+  "file_scan_inclusions": ["**/*.java", "**/*.md"],
+  // 1. Enable Rainbow Brackets and Indent Guides
+  "colorize_brackets": true,
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware", // Uses the 'accents' colors defined below
+  },
+
+  // 2. Override specific colors for your theme
+  "theme_overrides": {
+    // IMPORTANT: Replace "One Dark" with your current theme name!
+    // You can see your active theme in the bottom right or via "Theme Selector".
+    "Colorizer Pro": {
+      "status_bar.background": "#1A3D64", // Your Purple Status Bar
+      "accents": [
+        "#9DB2BF",
+        "#A6B1E1",
+        "#179FFF",
+        "#7F8CAA",
+        "#bc90ee",
+        "#c9fea5",
+      ],
+    },
+  },
+}
