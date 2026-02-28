@@ -3,6 +3,12 @@
         modifiers: [
             Super,
         ],
+        key: "l",
+    ): System(LockScreen),
+    (
+        modifiers: [
+            Super,
+        ],
         key: "v",
         description: Some("Clipboard"),
     ): Spawn("ringboard-egui"),
@@ -16,12 +22,13 @@
         modifiers: [
             Super,
         ],
-        key: "p",
-    ): Spawn("bw-autofill"),
+        key: "e",
+        description: Some("File Manager"),
+    ): Spawn("cosmic-files"),
     (
         modifiers: [
             Super,
         ],
-        key: "l",
-    ): System(LockScreen),
+        key: "p",
+    ): Spawn("bw-autofill"),
 }

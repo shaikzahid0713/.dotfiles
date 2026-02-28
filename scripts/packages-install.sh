@@ -48,8 +48,10 @@ set -e  # Exit on error
 #   iwd                        - Modern WiFi daemon
 #   openssh                    - SSH client/server
 #   rsync                      - File synchronization
-#   wget                       - Download tool
-#   curl                       - HTTP client
+#   curl                       - HTTP client (Required by OS, do not remove)
+#   xh                         - Fast, friendly HTTP client (Rust)
+#   aria2                      - Multi-protocol lightweight download utility
+#   httpie                     - Modern command line HTTP client
 #   wireless-regdb             - WiFi regulatory database
 #   ufw                        - Firewall management
 #
@@ -159,8 +161,6 @@ set -e  # Exit on error
 #
 # GVFS (Virtual Filesystem):
 #   gvfs                       - Virtual filesystem abstraction
-#   gvfs-goa                   - GNOME Online Accounts support
-#   gvfs-google                - Google Drive mounting
 #   gvfs-mtp                   - Android/camera media transfer
 #
 # CONTAINERS & VIRTUALIZATION:
@@ -273,7 +273,7 @@ PACMAN_PKGS=(
 
     # ── Networking ─────────────────────────────────────────────────────────
     networkmanager networkmanager-openvpn iwd
-    openssh rsync wget curl wireless-regdb ufw
+    openssh rsync curl wireless-regdb ufw xh aria2 httpie
 
     # ── Bluetooth & Audio ───────────────────────────────────────────────────
     bluez bluez-libs bluez-utils
@@ -330,7 +330,7 @@ PACMAN_PKGS=(
     cachyos-rate-mirrors cachyos-settings chwd
 
     # ── GVFS ───────────────────────────────────────────────────────────────
-    gvfs gvfs-goa gvfs-google gvfs-mtp
+    gvfs gvfs-mtp
 
     # ── Containers ─────────────────────────────────────────────────────────
     podman podman-compose buildah
