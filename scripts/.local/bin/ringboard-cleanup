@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# Keep the top 100 entries automatically
+KEEP_LIMIT=100
+
+# Get all IDs ordered by most recent first
+ALL_IDS=$(ringboard search ".*" --regex --json | jq -r '.[].id')
+TOTAL_COUNT=$(echo "$ALL_IDS" | wc -l)
+
+if [ "$TOTAL_COUNT" -le "$KEEP_LIMIT" ]; then
+    echo "Current clipboard entries ($TOTAL_COUNT) are within the limit ($KEEP_LIMIT). No cleanup required."
+    exit 0
+fi
+
+# Get IDs to remove (everything after the first 100)
+IDS_TO_REMOVE=$(echo "$ALL_IDS" | tail -n +$((KEEP_LIMIT + 1)))
+
+# Remove the old entries
+echo "Cleaning up $((TOTAL_COUNT - KEEP_LIMIT)) old entries from ringboard..."
+while IFS= read -r id; do
+    ringboard remove "$id"
+done <<< "$IDS_TO_REMOVE"
+
+# Perform garbage collection to free up space
+echo "Running garbage collection..."
+ringboard garbage-collect
+
+echo "Cleanup complete."

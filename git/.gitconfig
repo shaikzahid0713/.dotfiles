@@ -19,3 +19,6 @@
 	conflictstyle = diff3
 [diff]
 	colorMoved = default
+[user]
+	name = Shaik Zahid
+	email = shaikzahid0713@gmail.com

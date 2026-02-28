@@ -1,0 +1,9 @@
+[Unit]
+Description=Run Ringboard Cleanup periodically
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=2d
+
+[Install]
+WantedBy=timers.target

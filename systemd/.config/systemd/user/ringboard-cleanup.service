@@ -1,0 +1,7 @@
+[Unit]
+Description=Ringboard Clipboard Cleanup
+After=ringboard.service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/ringboard-cleanup
