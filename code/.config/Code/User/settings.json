@@ -1,0 +1,385 @@
+{
+    // ---------------------------------------- Vim -----------------------------------------------
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.incsearch": true,
+    "vim.timeout": 250,
+    "vim.ignorecase": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.autoindent": false,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#864879",
+    "vim.overrideCopy": false,
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.handleKeys": {
+        "<C-d>": false,
+    },
+    "vim.useCtrlKeys": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        },
+        {
+            "before": [
+                "<tab>"
+            ],
+            "commands": [
+                ":tabnext"
+            ],
+            "when": "inEditorsPicker && inQuickOpen"
+        },
+        {
+            "before": [
+                "<S-tab>"
+            ],
+            "commands": [
+                ":tabprev"
+            ],
+            "when": "inEditorsPicker && inQuickOpen"
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.insertLineBefore",
+                // "lineBreakInsert"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "f"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "z"
+            ],
+            "after": [
+                "0"
+            ]
+        },
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                "%"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "f"
+            ],
+            "after": [
+                "g",
+                "g",
+                "d",
+                "G",
+            ]
+        },
+        {
+            "before": [
+                "y",
+                "f"
+            ],
+            "after": [
+                "g",
+                "g",
+                "y",
+                "G",
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        "#392467",
+        "#fff"
+    ],
+    "vim.statusBarColors.insert": [
+        "#102C57",
+        "#fff"
+    ],
+    "vim.statusBarColors.visual": [
+        "#7E2553",
+        "#fff"
+    ],
+    "vim.statusBarColors.visualline": [
+        "#FCFFE7",
+        "#000"
+    ],
+    "vim.statusBarColors.visualblock": [
+        "#A3BE8C",
+        "#000"
+    ],
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#69096F",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#461959",
+    "vim.statusBarColors.easymotioninputmode": "#461959",
+    "vim.statusBarColors.surroundinputmode": "#176B87",
+    // ---------------------------------------- Which Key -----------------------------------------------
+    "whichkey.delay": 0,
+    "whichkey.sortOrder": "alphabetically",
+    "whichkey.bindings": [
+        {
+            "key": ";",
+            "name": "commands",
+            "type": "command",
+            "command": "workbench.action.showCommands"
+        },
+        {
+            "key": "a",
+            "name": "Activity Bar",
+            "type": "bindings",
+            "command": "workbench.action.toggleActivityBarVisibility"
+        },
+        {
+            "key": "p",
+            "name": "Open Live Preview",
+            "type": "command",
+            "command": "livePreview.start.preview.atFile"
+        },
+        {
+            "key": "k",
+            "name": "Close active editor",
+            "type": "command",
+            "command": "workbench.action.closeActiveEditor"
+        },
+        {
+            "key": "q",
+            "name": "Kill Terminal",
+            "type": "command",
+            "command": "workbench.action.terminal.kill"
+        },
+        {
+            "key": "t",
+            "name": "Toggle Terminal",
+            "type": "command",
+            "command": "workbench.action.togglePanel"
+        },
+        {
+            "key": "b",
+            "name": "Buffers/Editors...",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "m",
+                    "name": "Close other editors",
+                    "type": "command",
+                    "command": "workbench.action.closeOtherEditors"
+                },
+                {
+                    "key": "u",
+                    "name": "Reopen closed editor",
+                    "type": "command",
+                    "command": "workbench.action.reopenClosedEditor"
+                },
+            ]
+        },
+        {
+            "key": "e",
+            "name": "Toggle Explorer",
+            "type": "command",
+            "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+            "key": "f",
+            "name": "Format Document",
+            "type": "bindings",
+            "command": "editor.action.formatDocument"
+        },
+        {
+            "key": "m",
+            "name": "Open Markdown Preview",
+            "type": "command",
+            "command": "markdown.showPreviewToSide"
+        },
+        {
+            "key": "h",
+            "name": "Split Horizontal",
+            "type": "command",
+            "command": "workbench.action.splitEditorDown"
+        },
+        {
+            "key": "r",
+            "name": "Run Code",
+            "type": "command",
+            "command": "code-runner.run",
+        },
+        {
+            "key": "r",
+            "name": "Reload Editor",
+            "type": "command",
+            "command": "workbench.action.reloadWindow",
+            "when": "isDevelopment"
+        },
+        {
+            "key": "s",
+            "name": "Search Files",
+            "type": "bindings",
+            "command": "workbench.action.quickOpen"
+        },
+        {
+            "key": "v",
+            "name": "Split Vertical",
+            "type": "command",
+            "command": "workbench.action.splitEditor"
+        },
+        {
+            "key": "z",
+            "name": "Toggle zen mode",
+            "type": "command",
+            "command": "workbench.action.toggleZenMode"
+        }
+    ],
+    "editor.fontSize": 18,
+    "editor.wordWrap": "on",
+    "editor.cursorBlinking": "expand",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontFamily": "Cascadia Code",
+    "editor.fontLigatures": true,
+    "workbench.startupEditor": "none",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.accessibilitySupport": "off",
+    "explorer.confirmDelete": false,
+    "editor.renderWhitespace": "trailing",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyleInactive": "block",
+    "terminal.integrated.cursorStyle": "line",
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "notebook.lineNumbers": "on",
+    "workbench.panel.defaultLocation": "bottom",
+    "editor.minimap.enabled": false,
+    "workbench.editorAssociations": {
+        "*.sql": "default"
+    },
+    "notebook.cellToolbarVisibility": "hover",
+    "notebook.cellToolbarLocation": {
+        "default": "left"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "editor.linkedEditing": true,
+    "workbench.settings.applyToAllProfiles": [
+        "simple-new-file.defaultPath"
+    ],
+    "editor.trimAutoWhitespace": true,
+    "terminal.integrated.env.linux": {},
+    "terminal.integrated.env.windows": {},
+    "code-runner.runInTerminal": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "terminal.integrated.fontFamily": "Cascadia Code",
+    "terminal.integrated.fontSize": 16,
+    "notebook.output.fontFamily": "Cascadia Code",
+    "markdown.preview.fontFamily": "\"Georgia\"",
+    "markdown.preview.fontSize": 18,
+    "terminal.explorerKind": "external",
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.editor.empty.hint": "hidden",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.colorTheme": "Flate",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.iconTheme": "material-icon-theme",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.guides.bracketPairs": true,
+    "editor.guides.highlightActiveBracketPair": true,
+    "editor.guides.bracketPairsHorizontal": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#392467",
+        "statusBar.noFolderBackground": "#392467",
+        "statusBar.debuggingBackground": "#392467",
+        "statusBar.foreground": "#fff",
+        "statusBar.debuggingForeground": "#fff",
+        "editorBracketPairGuide.background1": "#505050",
+        "editorBracketPairGuide.background2": "#505050",
+        "editorBracketPairGuide.background3": "#505050",
+        "editorBracketPairGuide.background4": "#505050",
+        "editorBracketPairGuide.background5": "#505050",
+        "editorBracketPairGuide.background6": "#505050",
+        "editorBracketPairGuide.activeBackground1": "#9DB2BF",
+        "editorBracketPairGuide.activeBackground2": "#A6B1E1",
+        "editorBracketPairGuide.activeBackground3": "#179FFF",
+        "editorBracketPairGuide.activeBackground4": "#7F8CAA",
+        "editorBracketPairGuide.activeBackground5": "#bc90ee",
+        "editorBracketPairGuide.activeBackground6": "#c9fea5"
+    },
+    "window.zoomLevel": 0,
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.tabs.location": "left",
+    "chat.viewSessions.orientation": "stacked",
+    "chat.editing.confirmEditRequestRemoval": false
+}

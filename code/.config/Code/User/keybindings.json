@@ -1,0 +1,118 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+d",
+        "command": "-vim.ctrl-d"
+      },
+
+  {
+      "key": "ctrl+n",
+      "command": "extension.simpleNewFile",
+      "when": "!terminalFocus"
+  },
+  {
+      "key": "ctrl+k",
+      "command": "jupyter.opennotebook"
+  },
+  {
+      "key": "ctrl+shift+k",
+      "command": "workbench.action.focusActivityBar"
+  },
+  {
+      "key": "ctrl+q",
+      "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+      "key": "ctrl+k",
+      "command": "workbench.action.maximizeEditor"
+  },
+  {
+      "key": "ctrl+b",
+      "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+      "key": "ctrl+l",
+      "command": "-extension.vim_navigateCtrlL"
+  },
+  {
+      "key": "tab",
+      "command": "selectNextSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+      "key": "shift+tab",
+      "command": "selectPrevSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+      "key": "ctrl+d",
+      "command": "editor.action.addSelectionToNextFindMatch",
+      "when": "editorTextFocus"
+  },
+
+  {
+      "key": "ctrl+oem_7",
+      "command": "notebook.cell.execute",
+      "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || !notebookCellExecuting && notebookCellType == 'code' && notebookCellListFocused || inlineChatFocused && notebookCellChatFocused && notebookKernelCount > 0 || !notebookCellExecuting && notebookCellType == 'code' && notebookCellListFocused || inlineChatFocused && notebookCellChatFocused && notebookKernelSourceCount > 0 || inlineChatFocused && notebookCellChatFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code'"
+  },
+  {
+      "key": "ctrl+oem_7",
+      "command": "notebook.cell.quitEdit",
+      "when": "inputFocus && notebookEditorFocused && !inlineChatFocused && notebookCellType == 'markup'"
+  },
+  {
+      "key": "ctrl+j",
+      "command": "-workbench.action.togglePanel"
+  },
+  {
+      "key": "ctrl+f",
+      "command": "editor.action.startFindReplaceAction",
+      "when": "editorFocus || editorIsOpen"
+  },
+  {
+      "key": "ctrl+h",
+      "command": "-editor.action.startFindReplaceAction",
+      "when": "editorFocus || editorIsOpen"
+  },
+
+  // Navigation
+  {
+      "key": "ctrl+j",
+      "command": "cursorDown",
+      "when": "textInputFocus"
+  },
+
+  {
+      "key": "ctrl+k",
+      "command": "cursorUp",
+      "when": "textInputFocus"
+  },
+
+  {
+      "key": "ctrl+l",
+      "command": "cursorRight",
+      "when": "textInputFocus"
+  },
+
+  {
+      "key": "ctrl+h",
+      "command": "cursorLeft",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "alt+oem_comma",
+      "command": "workbench.action.focusNextGroup"
+  },
+  {
+      "key": "ctrl+d",
+      "command": "-extension.vim_ctrl+d",
+      "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+},
+{
+    "key": "ctrl+d",
+    "command": "-list.focusPageDown",
+    "when": "listFocus && !inputFocus"
+},
+
+ // Vim Related Commands
+]
