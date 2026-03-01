@@ -1,0 +1,24 @@
+[Unit]
+Description=Rclone Google Drive Mount
+AssertPathIsDirectory=/home/shaik/Clouds/Drive
+After=network-online.target
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/rclone mount 0713: /home/shaik/Clouds/Drive \
+    --vfs-cache-mode full \
+    --vfs-cache-max-size 10G \
+    --vfs-cache-max-age 24h \
+    --vfs-read-chunk-size 16M \
+    --vfs-read-chunk-size-limit 2G \
+    --dir-cache-time 72h \
+    --buffer-size 64M \
+    --poll-interval 10m \
+    --transfers 8 \
+    --checkers 8
+ExecStop=/usr/bin/fusermount3 -uz /home/shaik/Clouds/Drive
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target
