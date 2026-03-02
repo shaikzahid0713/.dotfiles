@@ -21,3 +21,4 @@ set -Ux XDG_DATA_HOME $HOME/.local/share
 
 # Systemd user services aliases
 alias syncthing="systemctl --user enable --now syncthing.service"
+alias stop-sync="systemctl --user stop syncthing.service"

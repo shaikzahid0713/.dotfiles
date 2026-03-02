@@ -358,9 +358,9 @@
     "editor.guides.highlightActiveBracketPair": true,
     "editor.guides.bracketPairsHorizontal": false,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#392467",
-        "statusBar.noFolderBackground": "#392467",
-        "statusBar.debuggingBackground": "#392467",
+        "statusBar.background": "#102C57",
+        "statusBar.noFolderBackground": "#102C57",
+        "statusBar.debuggingBackground": "#102C57",
         "statusBar.foreground": "#fff",
         "statusBar.debuggingForeground": "#fff",
         "editorBracketPairGuide.background1": "#505050",
