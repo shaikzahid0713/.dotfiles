@@ -18,3 +18,6 @@ set -gx DOCKER_HOST "unix:///run/user/$(id -u)/podman/podman.sock"
 set -Ux XDG_CONFIG_HOME $HOME/.config
 set -Ux XDG_CACHE_HOME $HOME/.cache
 set -Ux XDG_DATA_HOME $HOME/.local/share
+
+# Systemd user services aliases
+alias syncthing="systemctl --user enable --now syncthing.service"
