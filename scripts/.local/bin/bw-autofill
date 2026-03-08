@@ -58,17 +58,14 @@ if [ -z "$PASS" ]; then
     exit 1
 fi
 
-# 6. Paste: username -> Tab -> password (no second popup)
-# Clipboard-based -- atomic paste, zero dropped chars on any Wayland app
-echo -n "$USER" | wl-copy
-sleep 0.3
-wtype -M ctrl -k v -m ctrl
+# 6. Type: username -> Tab -> password (no second popup)
+# Delay to ensure wofi is completely closed so focus is on the browser.
+# 0.4s prevents the first characters from being sliced off.
+sleep 0.4
+
+# Emit characters one-by-one to bypass JS restrictions on banking apps.
+wtype -d 12 -- "$USER"
 sleep 0.3
 wtype -k Tab
 sleep 0.3
-echo -n "$PASS" | wl-copy
-sleep 0.2
-wtype -M ctrl -k v -m ctrl
-
-# Auto-clear clipboard after 30 seconds
-(sleep 30 && wl-copy --clear) &
+wtype -d 12 -- "$PASS"
