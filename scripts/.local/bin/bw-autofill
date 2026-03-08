@@ -1,121 +1,74 @@
 #!/usr/bin/env bash
-# Bitwarden Wayland autofill v10
-# Dynamic field detection: detects username/password field via AT-SPI *before*
-# wofi steals focus, then pastes the right credential(s) after entry selection.
-#
-# Two-step vault picker:
-#   Step 1: Name-only picker -- noise-free search (no email matches)
-#   Step 2: Username disambiguation -- only shown when multiple accounts share a name
-#
-# Paste behaviour (controlled by bw-detect-field):
-#   focused on text/email input  -> paste username only
-#   focused on password input    -> paste password only
-#   unknown / no field focused   -> full autofill: username -> Tab -> password
-#
-# Requires: rbw, wofi, wtype, wl-clipboard, bw-detect-field (python3 + gi/Atspi)
+# Bitwarden Wayland autofill v4
+# 2-column table (Name | Username) - single-action paste
+# Requires: rbw, wofi, wtype, wl-clipboard
 
 CSS="$HOME/.config/wofi/bitwarden.css"
 
-# -- 1. Detect focused field type BEFORE wofi takes focus ----------------------
-FIELD_TYPE=$(bw-detect-field 2>/dev/null)
-
-# -- 2. Unlock vault and sync ------------------------------------------------------------
+# 1. Unlock vault
 rbw unlock 2>/dev/null
-rbw sync
 
-# -- 3. Fetch all entries: id TAB name TAB user ---------------------------------
-ALL=$(rbw list --fields id,name,user 2>/dev/null)
+# 2. Fetch all entries: name TAB user
+# valid rbw list fields: id, name, user, folder, type
+ALL=$(rbw list --fields name,user 2>/dev/null)
+
 if [ -z "$ALL" ]; then
     notify-send -t 4000 "Bitwarden" "Vault empty or not synced. Run: rbw sync"
     exit 1
 fi
 
-# -- 4. Step 1: deduplicated name picker ----------------------------------------
-# Trim trailing whitespace rbw sometimes adds (e.g. "Aegis Authenticator ")
-NAMES=$(echo "$ALL" | awk -F'\t' '{n=$2; gsub(/[[:space:]]+$/, "", n); print n}' | sort -u)
+# 3. Format as aligned 2-column table: Name (30) | Username
+DISPLAY=$(echo "$ALL" | awk -F'\t' '{
+    name = $1; user = $2
+    if (length(name) > 30) name = substr(name, 1, 29) "..."
+    if (length(user) > 36) user = substr(user, 1, 35) "..."
+    printf "%-30s  |  %s\n", name, user
+}')
 
-SEL_NAME=$(echo "$NAMES" | wofi \
+HEADER=$(printf "%-30s  |  %s" "  Name" "  Username")
+SEP="----------------------------------------------------------------------"
+MENU=$(printf "%s\n%s\n%s" "$HEADER" "$SEP" "$DISPLAY")
+
+# 4. Show picker
+SEL=$(echo "$MENU" | wofi \
     --dmenu \
     --prompt "Vault" \
     --lines 14 \
     --width 640 \
     --style "$CSS" \
-    --insensitive \
     --no-actions)
 
-[ -z "$SEL_NAME" ] && exit 0
+[ -z "$SEL" ] && exit 0
 
-# -- 5. Find all entries whose trimmed name matches the selection ---------------
-MATCHES=$(echo "$ALL" | awk -F'\t' -v sel="$SEL_NAME" '{
-    n = $2; gsub(/[[:space:]]+$/, "", n)
-    if (n == sel) print
-}')
+# Reject header or separator lines
+[[ "$SEL" == *"Username"* ]] && exit 0
+[[ "$SEL" == *"------"* ]] && exit 0
 
-MATCH_COUNT=$(echo "$MATCHES" | wc -l)
+# 5. Resolve credentials
+LINE_NUM=$(echo "$DISPLAY" | grep -nF "$SEL" | head -1 | cut -d: -f1)
+[ -z "$LINE_NUM" ] && exit 0
 
-# -- 6. Step 2: username disambiguation when multiple accounts share a name ----
-if [ "$MATCH_COUNT" -gt 1 ]; then
-    USER_DISPLAY=$(echo "$MATCHES" | awk -F'\t' '{
-        u = ($3 == "") ? "(no username)" : $3
-        printf "%d.  %s\n", NR, u
-    }')
-
-    SEL_LINE=$(echo "$USER_DISPLAY" | wofi \
-        --dmenu \
-        --prompt "$SEL_NAME" \
-        --lines "$MATCH_COUNT" \
-        --width 480 \
-        --style "$CSS" \
-        --no-actions)
-
-    [ -z "$SEL_LINE" ] && exit 0
-
-    LINE_NUM=$(echo "$SEL_LINE" | awk '{print $1}' | tr -d '.')
-    MATCHES=$(echo "$MATCHES" | sed -n "${LINE_NUM}p")
-fi
-
-[ -z "$MATCHES" ] && exit 0
-
-UUID=$(echo "$MATCHES" | awk -F'\t' '{print $1}')
-NAME=$(echo "$MATCHES" | awk -F'\t' '{print $2}')
-USER=$(echo "$MATCHES" | awk -F'\t' '{print $3}')
-PASS=$(rbw get "$UUID" 2>/dev/null)
+LINE=$(echo "$ALL" | sed -n "${LINE_NUM}p")
+NAME=$(echo "$LINE" | awk -F'\t' '{print $1}')
+USER=$(echo "$LINE" | awk -F'\t' '{print $2}')
+PASS=$(rbw get "$NAME" --user "$USER" 2>/dev/null || rbw get "$NAME" 2>/dev/null)
 
 if [ -z "$PASS" ]; then
     notify-send -t 4000 "Bitwarden" "Could not fetch password for: $NAME"
     exit 1
 fi
 
-# -- 7. Type based on detected field type --------------------------------------
-# Single focus-return delay after ALL wofi interaction is done.
-# COSMIC holds focus on the wofi window during its close animation; typing
-# before this delay ends sends keystrokes into the wofi window, not the browser.
-# One wait here covers both the 1-step and 2-step picker cases.
-sleep 0.8
+# 6. Paste: username -> Tab -> password (no second popup)
+# Clipboard-based -- atomic paste, zero dropped chars on any Wayland app
+echo -n "$USER" | wl-copy
+sleep 0.3
+wtype -M ctrl -k v -m ctrl
+sleep 0.3
+wtype -k Tab
+sleep 0.3
+echo -n "$PASS" | wl-copy
+sleep 0.2
+wtype -M ctrl -k v -m ctrl
 
-# wtype -d 12: 12ms inter-keystroke delay prevents JS-validated fields
-# (especially banking sites) from dropping keystrokes typed at full speed.
-# wtype -- prevents passwords starting with '-' being parsed as flags.
-type_field() {
-    wtype -d 12 -- "$1"
-}
-
-case "$FIELD_TYPE" in
-    password)
-        # Cursor was on a password input -- type password only
-        type_field "$PASS"
-        ;;
-    username)
-        # Cursor was on a text/email input -- type username only
-        type_field "$USER"
-        ;;
-    *)
-        # No AT-SPI field info -- full autofill: username -> Tab -> password
-        type_field "$USER"
-        sleep 0.15
-        wtype -k Tab
-        sleep 0.15
-        type_field "$PASS"
-        ;;
-esac
-esac
+# Auto-clear clipboard after 30 seconds
+(sleep 30 && wl-copy --clear) &
