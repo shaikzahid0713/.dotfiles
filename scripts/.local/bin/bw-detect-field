@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+"""
+bw-detect-field — AT-SPI focused field type detector for bw-autofill.
+
+Prints one of:
+  password  — focused element is a password input
+  username  — focused element is a text/email/username input
+  unknown   — no focused field detected or AT-SPI unavailable
+
+Designed to run BEFORE wofi opens so the focused field in the browser
+is still the active element at query time.
+"""
+import sys
+import gi
+gi.require_version('Atspi', '2.0')
+from gi.repository import Atspi
+
+Atspi.init()
+
+# AT-SPI roles we treat as "username / text" inputs
+_TEXT_ROLES = frozenset({
+    Atspi.Role.ENTRY,
+    Atspi.Role.TEXT,
+    Atspi.Role.DOCUMENT_TEXT,
+})
+
+
+def _field_type(node, depth=0):
+    """
+    Depth-first search for the focused element.
+    Returns 'password', 'username', or None.
+    """
+    if depth > 60:
+        return None
+
+    try:
+        states = node.get_state_set()
+        if states.contains(Atspi.StateType.FOCUSED):
+            role = node.get_role()
+            if role == Atspi.Role.PASSWORD_TEXT:
+                return "password"
+            if role in _TEXT_ROLES:
+                return "username"
+            # Focused but not a leaf input — keep descending
+    except Exception:
+        return None
+
+    try:
+        count = node.get_child_count()
+    except Exception:
+        return None
+
+    for i in range(count):
+        try:
+            child = node.get_child_at_index(i)
+        except Exception:
+            continue
+        if child is None:
+            continue
+        result = _field_type(child, depth + 1)
+        if result is not None:
+            return result
+
+    return None
+
+
+try:
+    desktop = Atspi.get_desktop(0)
+    result = _field_type(desktop)
+    print(result or "unknown")
+except Exception as e:
+    print("unknown", file=sys.stderr)
+    print("unknown")

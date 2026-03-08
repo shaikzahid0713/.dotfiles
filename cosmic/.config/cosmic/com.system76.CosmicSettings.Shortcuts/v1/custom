@@ -3,15 +3,15 @@
         modifiers: [
             Super,
         ],
-        key: "l",
-    ): System(LockScreen),
+        key: "v",
+        description: Some("Clipboard"),
+    ): Spawn("ringboard-egui"),
     (
         modifiers: [
             Super,
         ],
-        key: "v",
-        description: Some("Clipboard"),
-    ): Spawn("ringboard-egui"),
+        key: "l",
+    ): System(LockScreen),
     (
         modifiers: [
             Super,
@@ -22,13 +22,13 @@
         modifiers: [
             Super,
         ],
-        key: "e",
-        description: Some("File Manager"),
-    ): Spawn("cosmic-files"),
+        key: "p",
+    ): Spawn("bw-autofill"),
     (
         modifiers: [
             Super,
         ],
-        key: "p",
-    ): Spawn("bw-autofill"),
+        key: "s",
+        description: Some("Screenshot region"),
+    ): Spawn("screenshot-region"),
 }

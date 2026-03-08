@@ -1,0 +1,12 @@
+[Unit]
+Description=Day/night color temperature adjustment (gammastep)
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/gammastep -m drm:card=1 -l 17.4:78.5 -t 6500:3500
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=graphical-session.target
