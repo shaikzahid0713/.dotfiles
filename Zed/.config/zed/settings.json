@@ -27,11 +27,11 @@
       "provider": "google",
       "model": "gemini-3.1-pro-preview",
     },
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
       "enable_thinking": true,
       "provider": "google",
-      "model": "gemini-2.5-pro",
+      "model": "gemini-3.1-pro-preview",
     },
     "favorite_models": [],
     "model_parameters": [],
@@ -44,7 +44,7 @@
   "icon_theme": "Colored Zed Icons Theme Dark",
   "base_keymap": "VSCode",
   "ui_font_size": 14.0,
-  "buffer_font_size": 15,
+  "buffer_font_size": 17.0,
   "theme": {
     "mode": "dark",
     "light": "One Light",
